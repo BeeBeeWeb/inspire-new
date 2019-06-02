@@ -1,31 +1,56 @@
+/* Abstracts - variables, functions, mixins, placeholders, etc */
+/* Border Radius */
+/* Transform Mixin */
+/* Box shadow Mixin */
+/* Transitions */
+/* Animation Mixin */
 /* layout - navigation, grid, header, footer, sidebar, forms, etc */
 .main-nav {
   position: absolute;
   background: #fff;
   right: 0;
   top: 0;
-  padding: 35px 50px; }
+  padding: 50px 130px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto; }
 
 .main-header {
   position: relative;
   z-index: 2; }
 
-.navbar-nav .primary-link {
+.navbar-light .navbar-nav .active .nav-link {
+  color: #ab5410; }
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #ab5410; }
+.navbar-light .navbar-nav .primary-link {
+  color: #404040; }
+.navbar-light .navbar-nav .secondary-link {
+  color: #848484; }
+
+.navbar-nav .nav-link {
   font-size: 20px;
-  line-height: 22px; }
+  line-height: 22px;
+  font-weight: 700; }
 
 .sticky-nav {
   margin-top: 40px;
   position: relative; }
   .sticky-nav li {
-    flex-basis: 16.666%; }
+    flex-basis: 14.666%;
+    margin-left: 2%; }
     .sticky-nav li:first-child a {
-      padding-left: 0; }
+      padding-left: 0;
+      margin-left: 0; }
+    .sticky-nav li.active a {
+      border-bottom: 4px solid #ab5410; }
   .sticky-nav a {
     color: #071201;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    padding: 0 0 10px;
+    display: inline-block;
     transition: all 0.2s Ease-in-out; }
     .sticky-nav a:hover {
       margin-top: 14px; }
@@ -133,12 +158,10 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio .portfolio-header {
   font-size: 38px;
   font-weight: 700; }
-
 .portfolio .nav-pills .nav-link {
   color: #010101;
   font-size: 16px;
   height: 100%; }
-
 .portfolio .nav-pills .nav-link.active {
   color: #ab5410;
   background: transparent;
@@ -148,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 .grid-container .portfolio-image-grid {
   display: grid;
   grid-gap: 5px;
-  grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item7' 'item8 item9 item9 item7'; }
+  grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item7' 'item8 item9 item9 item7'; }
   .grid-container .portfolio-image-grid .grid-item {
     text-align: center; }
     .grid-container .portfolio-image-grid .grid-item img {
@@ -172,3 +195,5 @@ h1, h2, h3, h4, h5, h6 {
     grid-area: item8; }
   .grid-container .portfolio-image-grid .item-9 {
     grid-area: item9; }
+
+/*# sourceMappingURL=style.css.map */
