@@ -1,9 +1,4 @@
 /* Abstracts - variables, functions, mixins, placeholders, etc */
-/* Border Radius */
-/* Transform Mixin */
-/* Box shadow Mixin */
-/* Transitions */
-/* Animation Mixin */
 /* layout - navigation, grid, header, footer, sidebar, forms, etc */
 .main-nav {
   position: absolute;
@@ -89,11 +84,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400; }
 
 .white-section, .gray-section {
-  padding: 140px 0; }
+  padding: 140px 0;
+  /* .tempImage {
+     background-color: black;
+     height: 450px;
+  }*/ }
   .white-section .title, .gray-section .title {
     font-size: 38px;
     line-height: 48px;
-    margin: 0 0 15px 0; }
+    margin: -10px 0 15px 0; }
   .white-section .sub-title, .gray-section .sub-title {
     font-size: 26px;
     line-height: 30px;
@@ -107,9 +106,6 @@ h1, h2, h3, h4, h5, h6 {
   .white-section .description, .gray-section .description {
     font-size: 15px;
     line-height: 20px; }
-  .white-section .tempImage, .gray-section .tempImage {
-    background-color: black;
-    height: 450px; }
   .white-section .features-list, .gray-section .features-list {
     flex-wrap: wrap; }
     .white-section .features-list.columns3 .list-group-item, .gray-section .features-list.columns3 .list-group-item {

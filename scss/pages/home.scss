@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   .title {
     font-size: 38px;
     line-height: 48px;
-    margin: 0 0 15px 0;
+    margin: -10px 0 15px 0;
   }
 
   .sub-title {
@@ -73,10 +73,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
   }
 
-  .tempImage {
-    background-color: black;
-    height: 450px;
-  }
+  /* .tempImage {
+     background-color: black;
+     height: 450px;
+  }*/
 
   .features-list {
     flex-wrap: wrap;

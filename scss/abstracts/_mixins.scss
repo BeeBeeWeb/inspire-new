@@ -1,11 +1,11 @@
-/* Border Radius */
+// Border Radius
 @mixin border-radius($radius){
     border-radius: $radius;
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
 }
 
-/* Transform Mixin */
+// Transform Mixin
 @mixin transform($transforms) {
 	   -moz-transform: $transforms;
 	     -o-transform: $transforms;
@@ -14,14 +14,14 @@
           transform: $transforms;
 }
 
-/* Box shadow Mixin */
+// Box shadow Mixin
 @mixin box-shadow($shadow) {
 	   -moz-box-shadow: $shadow;
 	-webkit-box-shadow: $shadow;
           box-shadow: $shadow;
 }
 
-/* Transitions */
+// Transitions
 @mixin transition($transition) {
     -moz-transition:    $transition;
     -o-transition:      $transition;
@@ -29,7 +29,7 @@
     transition:         $transition;
 }
 
-/* Animation Mixin */
+// Animation Mixin
 @mixin keyframe ($animation_name) {
     @-webkit-keyframes $animation_name {
         @content;
