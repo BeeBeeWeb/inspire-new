@@ -21,8 +21,8 @@
     }
 }
 
-
 .grid-container {
+    min-height: 500px;
 
     .portfolio-image-grid {
         display: grid;
@@ -34,6 +34,7 @@
     
         .grid-item {
             text-align: center;
+            overflow: hidden;
     
             img {
                 width: 100%;
@@ -68,4 +69,35 @@
             grid-area: item9;
         }
     }
+}
+
+.testimonials {
+    background: #FFC001;
+
+    .testimonials-header {
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    #testimonials-carousel {
+        
+        img {
+            width: 100%;
+            padding-top: 8px;
+        }
+
+        .carousel-indicators {
+            left: initial;
+            margin: 0;
+
+            li {
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border: 2px solid black;
+                border-radius: 100%;
+            }
+        }
+    }
+
 }
