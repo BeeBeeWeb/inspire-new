@@ -146,3 +146,63 @@ h1, h2, h3, h4, h5, h6 {
 .gray-section {
   background-color: #f0f0f0;
 }
+
+.design-approach-section {
+  padding: 100px 0;
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .da-icon {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 54%, rgba(255,255,255,0.33) 59%, rgba(192,192,192,0.49) 69%, rgba(192,192,192,1) 100%);
+    border-radius: 50%;
+    height: 200px;
+    margin: 15px auto 0;
+    width: 200px;
+  }
+
+  .da-title {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .da-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.we-inspire-section {
+  background-color: #ffb41b;
+  padding: 60px 0;
+
+  .description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 15px 0 0 0;
+  }
+
+  .wi-number {
+    color: #ab5410;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 0.8;
+    margin: 40px 0 0 0;
+  }
+
+  .wi-caption {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  .know-more-btn {
+    border-radius: 36px;
+    height: 36px;
+    padding: 0 12px;
+    margin: 40px 0 0 0;
+  }
+}

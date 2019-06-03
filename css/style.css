@@ -16,10 +16,13 @@
 
 .navbar-light .navbar-nav .active .nav-link {
   color: #ab5410; }
+
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #ab5410; }
+
 .navbar-light .navbar-nav .primary-link {
   color: #404040; }
+
 .navbar-light .navbar-nav .secondary-link {
   color: #848484; }
 
@@ -151,25 +154,71 @@ h1, h2, h3, h4, h5, h6 {
 .gray-section {
   background-color: #f0f0f0; }
 
+.design-approach-section {
+  padding: 100px 0; }
+  .design-approach-section .sub-title {
+    font-size: 20px; }
+  .design-approach-section .da-icon {
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0.33) 59%, rgba(192, 192, 192, 0.49) 69%, silver 100%);
+    border-radius: 50%;
+    height: 200px;
+    margin: 15px auto 0;
+    width: 200px; }
+  .design-approach-section .da-title {
+    font-size: 26px;
+    font-weight: 500; }
+  .design-approach-section .da-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px; }
+
+.we-inspire-section {
+  background-color: #ffb41b;
+  padding: 60px 0; }
+  .we-inspire-section .description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 15px 0 0 0; }
+  .we-inspire-section .wi-number {
+    color: #ab5410;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 0.8;
+    margin: 40px 0 0 0; }
+  .we-inspire-section .wi-caption {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px; }
+  .we-inspire-section .know-more-btn {
+    border-radius: 36px;
+    height: 36px;
+    padding: 0 12px;
+    margin: 40px 0 0 0; }
+
 .portfolio .portfolio-header {
   font-size: 38px;
   font-weight: 700; }
+
 .portfolio .nav-pills .nav-link {
+  border: 1px solid transparent;
+  border-radius: 50px;
   color: #010101;
   font-size: 16px;
-  height: 100%; }
+  height: 100%;
+  transition: all 0.3s ease; }
+
 .portfolio .nav-pills .nav-link.active {
   color: #ab5410;
   background: transparent;
-  border: 1px solid #ab5410;
-  border-radius: 50px; }
+  border: 1px solid #ab5410; }
 
 .grid-container {
   min-height: 500px; }
   .grid-container .portfolio-image-grid {
     display: grid;
     grid-gap: 5px;
-    grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item7' 'item8 item9 item9 item7'; }
+    grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item7' 'item8 item9 item9 item7'; }
     .grid-container .portfolio-image-grid .grid-item {
       text-align: center;
       overflow: hidden; }
@@ -213,4 +262,5 @@ h1, h2, h3, h4, h5, h6 {
       border: 2px solid black;
       border-radius: 100%; }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: 'Roboto', sans-serif; }
