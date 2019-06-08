@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inspire Advertising</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Advertising firm">
+  <meta name="keywords" content="Advertising agency">
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
+
+  <noscript>
+    <div class="noscriptWrap">
+      <p>For full functionality of this site it is necessary to enable JavaScript.
+        Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+          instructions how to enable JavaScript in your web browser</a>.
+      </p>
+    </div><!-- noscriptWrap -->
+  </noscript>
+</head>
+
+<body>
+
+  <section class="contact-us py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4">
+            <a class="navbar-brand mt-1" href="index.html">
+              <img src="images/Inspire-Logo.png" alt="Inspire Logo" class="img-fluid">
+            </a>
+
+            <address class="my-5">
+              <h6 style="color: #ab5410;">PUNE</h6>
+              4-C, Devgiri, Kothrud Industrial Estate,<br>
+              Plot No. 17/1 B, Kothrud, Pune - 411 029 <br>
+              Tel.: + 91-20-25465170, 25467955 <br>
+              M: + 91 9823033601 <br>
+              <a href="mailto:info@inspiremultimedia.co.in">info@inspiremultimedia.co.in</a>
+              
+            </address>
+
+            <address>
+                <h6 style="color: #ab5410;">MUMBAI</h6>
+                Vashween Apts., 202, A Wing, <br>
+                Seven Bungalows, Andheri (W), <br>
+                Mumbai - 400 061 <br>
+                M: + 91 7757951600
+            </address>
+        </div>
+
+        <div class="col-8">
+          <h1 class="contact-form-header text-center mb-5">Start getting result</h1>
+
+          <form action="" id="contact-us-form" method="post">
+
+            <div class="row">
+
+              <div class="col">
+
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone</label>
+                  <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Company</label>
+                  <input type="text" class="form-control" id="companyName" name="companyName">
+                </div>
+
+              </div>
+
+              <div class="col">
+
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                  <label for="emailId">Email</label>
+                  <input type="email" class="form-control" id="emailId" name="emailId">
+                </div>
+                <div class="form-group">
+                  <label for="yourRole">Your role</label>
+                  <input type="text" class="form-control" id="yourRole" name="yourRole">
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="enquiryDetails">What can we do for you?</label>
+                  <textarea class="form-control" id="enquiryDetails" name="enquiryDetails" rows="6"></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 text-right">
+                  <button type="submit" class="form-submit-btn">Submit</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <script>
+    'use-strict';
+    $(document).ready(function () {
+      $("#contact-us-form").validate({
+        rules: {
+          firstName: {
+            required: true
+          },
+          lastName: {
+            required: true
+          },
+          phoneNumber: {
+            required: true,
+            digits: true
+          },
+          emailId: {
+            required: true,
+            email: true
+          },
+          companyName: {
+            required: true
+          },
+          yourRole: {
+            required: true
+          },
+          enquiryDetails: {
+            required: true
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
