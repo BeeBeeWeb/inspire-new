@@ -1,0 +1,68 @@
+footer {
+  background-color: #000000;
+  padding: 65px 0;
+
+  .inspire-logo {
+    max-width: 160px;
+  }
+
+  address,
+  .nav-link,
+  .navbar-nav .nav-link {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .contact-info {
+    .inspire-logo,
+    address,
+    .nav-link,
+    .navbar-nav .nav-link {
+      margin: 0 0 10px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .nav2 {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding: 0 0 10px 0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    .nav-item {
+      &:last-child {
+        .nav-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    padding: 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #ffffff;
+      }
+  }
+
+  h5 {
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
