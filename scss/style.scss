@@ -8,7 +8,38 @@
 @import 'pages/home';
 @import 'pages/portfolio';
 @import 'pages/contactUs';
+@import 'pages/careers';
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.form-btn {
+  background: #ab5410;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  padding: 4px 30px;
+}
+
+form {
+  font-size: 16px;
+  padding: 40px;
+  box-shadow: 5px 5px 15px 4px lightgrey;
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  label {
+    margin-left: 4px;
+  }
+
+  label.error {
+    color: tomato;
+    font-size: 12px;
+    margin-left: 4px;
+    margin-bottom: 0;
+  }
 }
