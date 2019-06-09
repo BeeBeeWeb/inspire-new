@@ -53,6 +53,83 @@
     .sticky-nav a:hover {
       margin-top: 14px; }
 
+footer .main-footer {
+  background-color: #000000;
+  padding: 65px 0; }
+
+footer .copyright-container {
+  background-color: #262626; }
+  footer .copyright-container .info {
+    color: #848484;
+    display: flex;
+    font-size: 12px;
+    line-height: 1;
+    justify-content: flex-end;
+    padding: 17px 0; }
+
+footer .inspire-logo {
+  max-width: 160px; }
+
+footer address,
+footer .nav-link,
+footer .navbar-nav .nav-link {
+  color: #848484;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2; }
+
+footer .contact-info .inspire-logo,
+footer .contact-info address,
+footer .contact-info .nav-link,
+footer .contact-info .navbar-nav .nav-link {
+  margin: 0 0 10px 0; }
+  footer .contact-info .inspire-logo:last-child,
+  footer .contact-info address:last-child,
+  footer .contact-info .nav-link:last-child,
+  footer .contact-info .navbar-nav .nav-link:last-child {
+    margin: 0; }
+
+footer .nav2 {
+  align-items: flex-end;
+  display: flex; }
+
+footer .navbar-nav .nav-link {
+  padding: 0 0 10px 0;
+  transition: all 0.3s ease; }
+  footer .navbar-nav .nav-link:hover {
+    color: #ffffff; }
+
+footer .navbar-nav .nav-item:last-child .nav-link {
+  padding: 0; }
+
+footer .nav-link {
+  padding: 0;
+  transition: all 0.3s ease; }
+  footer .nav-link:hover {
+    color: #ffffff; }
+
+footer h5 {
+  color: #ffffff;
+  font-weight: 400; }
+
+footer .sc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+footer .sc-icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  footer .sc-icons li {
+    background-color: darkorange;
+    border-radius: 50%;
+    height: 20px;
+    margin: 0 15px 0 0;
+    min-width: 20px;
+    width: 20px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
 
@@ -124,12 +201,12 @@ h1, h2, h3, h4, h5, h6 {
       margin: 15px 0 0;
       padding: 0; }
       .white-section .features-list .list-group-item .icon, .gray-section .features-list .list-group-item .icon {
-        background-color: #ffb41b;
         border-radius: 50%;
-        height: 32px;
         margin: 0 15px 0 0;
-        min-width: 32px;
-        width: 32px; }
+        height: 24px;
+        min-width: 24px;
+        padding: 5px 0 0 0;
+        width: 24px; }
       .white-section .features-list .list-group-item .text, .gray-section .features-list .list-group-item .text {
         font-size: 16px;
         line-height: 20px;
