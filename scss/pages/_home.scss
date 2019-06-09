@@ -104,12 +104,13 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0;
 
       .icon {
-        background-color: #ffb41b;
+        // background-color: #ffb41b;
         border-radius: 50%;
-        height: 32px;
         margin: 0 15px 0 0;
-        min-width: 32px;
-        width: 32px;
+        height: 24px;
+        min-width: 24px;
+        padding: 5px 0 0 0;
+        width: 24px;
       }
 
       .text {

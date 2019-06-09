@@ -1,0 +1,105 @@
+footer {
+  .main-footer {
+    background-color: #000000;
+    padding: 65px 0;
+  }
+
+  .copyright-container {
+    background-color: #262626;
+    
+    .info {
+      color: #848484;
+    display: flex;
+    font-size: 12px;
+    line-height: 1;
+    justify-content: flex-end;
+    padding: 17px 0;
+    }
+  }
+
+  .inspire-logo {
+    max-width: 160px;
+  }
+
+  address,
+  .nav-link,
+  .navbar-nav .nav-link {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .contact-info {
+    .inspire-logo,
+    address,
+    .nav-link,
+    .navbar-nav .nav-link {
+      margin: 0 0 10px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .nav2 {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding: 0 0 10px 0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    .nav-item {
+      &:last-child {
+        .nav-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    padding: 0;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #ffffff;
+      }
+  }
+
+  h5 {
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .sc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sc-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background-color: darkorange;
+      border-radius: 50%;
+      height: 20px;
+      margin: 0 15px 0 0;
+      min-width: 20px;
+      width: 20px;
+    }
+  }
+}
