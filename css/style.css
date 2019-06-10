@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
   .grid-container .portfolio-image-grid {
     display: grid;
     grid-gap: 5px;
-    grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item7' 'item8 item9 item9 item7'; }
+    grid-template-areas: 'item1 item2 item3 item4' 'item5 item5 item6 item4' 'item7 item8 item8 item8'; }
     .grid-container .portfolio-image-grid .grid-item {
       text-align: center;
       overflow: hidden; }
@@ -334,14 +334,17 @@ h1, h2, h3, h4, h5, h6 {
       grid-area: item7; }
     .grid-container .portfolio-image-grid .item-8 {
       grid-area: item8; }
-    .grid-container .portfolio-image-grid .item-9 {
-      grid-area: item9; }
 
 .testimonials {
   background: #FFC001; }
   .testimonials .testimonials-header {
     font-size: 38px;
-    font-weight: 700; }
+    font-weight: 700;
+    position: relative; }
+    .testimonials .testimonials-header img {
+      position: absolute;
+      left: 0;
+      top: 0; }
   .testimonials #testimonials-carousel img {
     width: 100%;
     padding-top: 8px; }
