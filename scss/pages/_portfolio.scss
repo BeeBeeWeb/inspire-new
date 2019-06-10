@@ -30,13 +30,15 @@
         display: grid;
         grid-gap: 5px;
         grid-template-areas:
-            'item1 item1 item2 item3'
-            'item4 item5 item6 item7'
-            'item8 item9 item9 item7';
+            'item1 item2 item3 item4'
+            'item5 item5 item6 item4'
+            'item7 item8 item8 item8';
     
         .grid-item {
             text-align: center;
             overflow: hidden;
+            // background: pink;
+            // padding: 8px;
     
             img {
                 width: 100%;
@@ -67,9 +69,9 @@
         .item-8 {
             grid-area: item8;
         }
-        .item-9 {
-            grid-area: item9;
-        }
+        // .item-9 {
+        //     grid-area: item9;
+        // }
     }
 }
 
@@ -79,6 +81,13 @@
     .testimonials-header {
         font-size: 38px;
         font-weight: 700;
+        position: relative;
+        
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 
     #testimonials-carousel {
