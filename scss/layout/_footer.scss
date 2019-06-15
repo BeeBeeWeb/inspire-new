@@ -87,6 +87,12 @@ footer {
     justify-content: space-between;
   }
 
+  .social-with-us {
+    .heading {
+      color: #ffffff;
+    }
+  }
+
   .sc-icons {
     display: flex;
     list-style: none;
@@ -94,7 +100,6 @@ footer {
     padding: 0;
 
     li {
-      background-color: darkorange;
       border-radius: 50%;
       height: 20px;
       margin: 0 15px 0 0;
