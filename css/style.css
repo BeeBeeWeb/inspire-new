@@ -315,10 +315,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-container {
   min-height: 500px; }
+  .grid-container .portfolio-image-grid.tab-1 {
+    grid-template-areas: 'item1 item2 item3 item4' 'item5 item6 item7 item8' 'item9 item10 item11 item12'; }
+  .grid-container .portfolio-image-grid.tab-2 {
+    grid-template-areas: 'item1 item2 item3 item3' 'item4 item5 item6 item7' 'item4 item8 item9 item10'; }
+  .grid-container .portfolio-image-grid.tab-3 {
+    grid-template-areas: 'item1 item2 item3 item4' 'item1 item5 item5 item6' 'item7 item8 item9 item9'; }
+  .grid-container .portfolio-image-grid.tab-4 {
+    grid-template-areas: 'item1 item2 item3 item4' 'item5 item5 item6 item4' 'item7 item8 item8 item8'; }
+  .grid-container .portfolio-image-grid.tab-5 {
+    grid-template-areas: 'item1 item2 item3 item4' 'item5 item5 item6 item7' 'item8 item9 item9 item7'; }
+  .grid-container .portfolio-image-grid.tab-6 {
+    grid-template-areas: 'item1 item1 item2 item3' 'item4 item5 item6 item6' 'item4 item7 item8 item9'; }
   .grid-container .portfolio-image-grid {
     display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 'item1 item2 item3 item4' 'item5 item5 item6 item4' 'item7 item8 item8 item8'; }
+    grid-gap: 5px; }
+    .grid-container .portfolio-image-grid p {
+      color: #010101;
+      font-size: 18px; }
     .grid-container .portfolio-image-grid .grid-item {
       text-align: center;
       overflow: hidden; }
@@ -341,6 +355,8 @@ h1, h2, h3, h4, h5, h6 {
       grid-area: item7; }
     .grid-container .portfolio-image-grid .item-8 {
       grid-area: item8; }
+    .grid-container .portfolio-image-grid .item-9 {
+      grid-area: item9; }
 
 .testimonials {
   background: #FFC001; }
@@ -352,18 +368,20 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       left: 0;
       top: 0; }
-  .testimonials #testimonials-carousel img {
-    width: 100%;
-    padding-top: 8px; }
-  .testimonials #testimonials-carousel .carousel-indicators {
-    left: initial;
-    margin: 0; }
-    .testimonials #testimonials-carousel .carousel-indicators li {
-      width: 10px;
-      height: 10px;
-      background: transparent;
-      border: 2px solid black;
-      border-radius: 100%; }
+  .testimonials #testimonials-carousel {
+    font-size: 14px; }
+    .testimonials #testimonials-carousel img {
+      width: 100%;
+      padding-top: 8px; }
+    .testimonials #testimonials-carousel .carousel-indicators {
+      left: initial;
+      margin: 0; }
+      .testimonials #testimonials-carousel .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border: 2px solid black;
+        border-radius: 100%; }
 
 .contact-form-header {
   font-size: 38px; }
@@ -606,6 +624,44 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 300; }
 
+.title-container {
+  position: relative; }
+  .title-container .back-btn {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+svg .back-btn-shape {
+  transition: all 0.3s ease; }
+
+svg:hover .back-btn-shape {
+  fill: #848484; }
+
+.blog-heading {
+  display: flex; }
+  .blog-heading .blog-info {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 40%; }
+    .blog-heading .blog-info .blog-title {
+      font-size: 62px;
+      line-height: 1; }
+    .blog-heading .blog-info .blog-author {
+      font-size: 30px;
+      line-height: 1; }
+  .blog-heading .blog-image {
+    overflow: hidden;
+    height: 315px;
+    width: 60%; }
+    .blog-heading .blog-image img {
+      width: 100%; }
+
+.blog-description p {
+  text-align: justify; }
+
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -630,3 +686,6 @@ form {
     font-size: 12px;
     margin-left: 4px;
     margin-bottom: 0; }
+
+#cboxLoadedContent {
+  padding: 50px; }
