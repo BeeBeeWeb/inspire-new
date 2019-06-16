@@ -565,6 +565,10 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   margin: 50px 0 0;
   padding: 0 40px; }
+  .blog-container a {
+    color: #071201; }
+  .blog-container:hover a {
+    text-decoration: none; }
   .blog-container:hover .blog-info {
     opacity: 0.8; }
   .blog-container:hover .blog-image {
