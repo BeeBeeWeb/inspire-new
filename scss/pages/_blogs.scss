@@ -1,0 +1,56 @@
+.blog-container {
+  cursor: pointer;
+  margin: 50px 0 0;
+  padding: 0 40px;
+
+  &:hover {
+    .blog-info {
+      opacity: 0.8;
+    }
+    .blog-image {
+      box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.blog-image {
+  transition: all 0.3s ease;
+}
+
+.blogs-list {
+  list-style: none;
+}
+
+.blog-title {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10px 0;
+  // transition: all 0.3s ease;
+}
+
+.blog-info {
+  padding: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.blog-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.blog-author {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+
+  .author-name {
+    font-weight: 400;
+  }
+}
+
+.blog-date {
+  color: #848484;
+  font-size: 12px;
+  font-weight: 300;
+}
