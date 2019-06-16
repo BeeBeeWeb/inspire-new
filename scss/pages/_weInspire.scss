@@ -11,7 +11,7 @@
     position: relative;
 
     .center-logo {
-      background: transparent url('../../images/infrastructure-center-logo.png') no-repeat;
+      background: transparent url("../images/infrastructure-center-logo.png") no-repeat;
       background-position: center;
       background-size: 163px;
       height: 165px;
@@ -80,7 +80,7 @@
     }
 
     .item-icon {
-      background: transparent url('../../images/design-studio.png') no-repeat;
+      background: transparent url("../images/design-studio.png") no-repeat;
       background-position: center;
       background-size: 69px;
       height: 70px;
@@ -109,7 +109,7 @@
   width: 480px;
   
   .image-mask {
-    background: transparent url('../../images/team-inspire-mask.png') no-repeat;
+    background: transparent url("../images/team-inspire-mask.png") no-repeat;
     background-size: 100%;
     border: 0px solid #fff;
     height: 442px;
@@ -150,7 +150,7 @@
     }
 
     .item-icon {
-      background: transparent url('../../images/svg/badge.svg') no-repeat;
+      background: transparent url('../images/svg/badge.svg') no-repeat;
       background-position: center;
       background-size: 45px;
       height: 45px;

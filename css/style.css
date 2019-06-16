@@ -19,7 +19,7 @@
   .main-header .navbar {
     flex: 1; }
   .main-header.small-header {
-    background: #ffb41b url("/images/small-header-bg.jpg") no-repeat;
+    background: #ffb41b url("../images/smallheaderbg.jpg") no-repeat;
     background-size: cover; }
 
 .banner-menu-container {
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   position: relative; }
   .points-container .center-logo {
-    background: transparent url("../../images/infrastructure-center-logo.png") no-repeat;
+    background: transparent url("../images/infrastructure-center-logo.png") no-repeat;
     background-position: center;
     background-size: 163px;
     height: 165px;
@@ -485,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
       background-image: -ms-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
       background-image: linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%); }
     .infrastructure-points-list .list-item .item-icon {
-      background: transparent url("../../images/design-studio.png") no-repeat;
+      background: transparent url("../images/design-studio.png") no-repeat;
       background-position: center;
       background-size: 69px;
       height: 70px;
@@ -508,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 480px; }
   .team-inspire-container .image-mask {
-    background: transparent url("../../images/team-inspire-mask.png") no-repeat;
+    background: transparent url("../images/team-inspire-mask.png") no-repeat;
     background-size: 100%;
     border: 0px solid #fff;
     height: 442px;
@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
       right: 12px;
       bottom: 12px; }
     .team-inspire-container .round-container .item-icon {
-      background: transparent url("../../images/svg/badge.svg") no-repeat;
+      background: transparent url("../images/svg/badge.svg") no-repeat;
       background-position: center;
       background-size: 45px;
       height: 45px;
