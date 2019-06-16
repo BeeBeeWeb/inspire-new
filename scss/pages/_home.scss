@@ -3,6 +3,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Home Page CSS */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.menu-icon {
+  height: 25px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    .menu-icon-shape {
+      fill: #000000;
+    }
+  }
+}
+
+.menu-icon-shape {
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.home-page {
+  .menu-icon {
+    height: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      .menu-icon-shape {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .menu-icon-shape {
+    fill: #000000;
+    transition: all 0.3s ease;
+  }
+}
+
 .home-banner {
   background-color: #ffb41b;
   min-height: 100vh;

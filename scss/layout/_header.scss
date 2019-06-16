@@ -11,24 +11,29 @@
   //@include transition(height 1S linear);
 }
 .main-header{
+  display: flex;
+  height: 268px;
   position: relative;
   z-index: 2;
+
+  .navbar {
+    flex: 1;
+  }
 
   &.small-header {
     background: #ffb41b url("/images/small-header-bg.jpg") no-repeat;
     background-size: cover;
-    display: flex;
-    height: 268px;
-
-    .navbar {
-      flex: 1;
-
-      .navbar-toggler {
-        background-color: rgba(255, 255, 255, 0.8);
-      }
-    }
   }
 }
+
+.banner-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 268px);
+}
+
+
 .navbar-light{
   .navbar-nav {
     .active{
@@ -57,7 +62,7 @@
   }
 }
 .sticky-nav {
-  margin-top:40px;
+  margin: auto 0 40px 0;
   position: relative;
   li{
     flex-basis:14.666%;
@@ -86,7 +91,7 @@
     display: inline-block;
     transition: all 0.2s Ease-in-out;
     &:hover{
-      margin-top: 14px;
+      transform: scale(1.1);
     }
   }
 

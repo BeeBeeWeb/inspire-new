@@ -12,17 +12,21 @@
   overflow-y: auto; }
 
 .main-header {
+  display: flex;
+  height: 268px;
   position: relative;
   z-index: 2; }
+  .main-header .navbar {
+    flex: 1; }
   .main-header.small-header {
     background: #ffb41b url("/images/small-header-bg.jpg") no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 268px; }
-    .main-header.small-header .navbar {
-      flex: 1; }
-      .main-header.small-header .navbar .navbar-toggler {
-        background-color: rgba(255, 255, 255, 0.8); }
+    background-size: cover; }
+
+.banner-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 268px); }
 
 .navbar-light .navbar-nav .active .nav-link {
   color: #ab5410; }
@@ -42,7 +46,7 @@
   font-weight: 700; }
 
 .sticky-nav {
-  margin-top: 40px;
+  margin: auto 0 40px 0;
   position: relative; }
   .sticky-nav li {
     flex-basis: 14.666%;
@@ -61,7 +65,7 @@
     display: inline-block;
     transition: all 0.2s Ease-in-out; }
     .sticky-nav a:hover {
-      margin-top: 14px; }
+      transform: scale(1.1); }
 
 .close-btn {
   background-color: #eeeeee;
@@ -152,6 +156,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
 
 /* Home Page CSS */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none; }
+
+.menu-icon {
+  height: 25px;
+  transition: all 0.3s ease; }
+  .menu-icon:hover .menu-icon-shape {
+    fill: #000000; }
+
+.menu-icon-shape {
+  fill: #ffffff;
+  transition: all 0.3s ease; }
+
+.home-page .menu-icon {
+  height: 25px;
+  transition: all 0.3s ease; }
+  .home-page .menu-icon:hover .menu-icon-shape {
+    fill: #ffffff; }
+
+.home-page .menu-icon-shape {
+  fill: #000000;
+  transition: all 0.3s ease; }
+
 .home-banner {
   background-color: #ffb41b;
   min-height: 100vh;

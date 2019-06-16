@@ -28,20 +28,25 @@
   </noscript>
 </head>
 
-<body>
+<body class="home-page">
 
   <section class="home-banner">
     <header class="main-header">
       <nav class="navbar navbar-light">
 
         <div class="container">
-          <a class="navbar-brand mt-5" href="index.html">
+          <a class="navbar-brand" href="index.html">
             <img src="images/Inspire-Logo.png" alt="Inspire Logo" class="img-fluid" />
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <svg class="menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink"
+              enable-background="new 0 0 24 24">
+              <path class="menu-icon-shape" d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z" />
+              <path class="menu-icon-shape" d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z" />
+              <path class="menu-icon-shape" d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z" />
+            </svg>
           </button>
 
           <div class="collapse navbar-collapse main-nav text-right animated fadeIn" id="navbarNav">
@@ -114,7 +119,7 @@
     <div id="particles-js" class="particles-layer"></div>
     <div class="background-overlay"></div>
 
-    <div class="container">
+    <div class="container banner-menu-container">
       <div class="row">
         <div class="col-md-5">
           <h1>Empowering<br />Brands...</h1>
@@ -143,33 +148,33 @@
 
       <ul class="nav sticky-nav flex-row flex-wrap">
         <li class="nav-item active">
-          <a class="nav-link" href="portfolio.html#brand-audit-corporate-identity">Brand Audit &amp; <br /> Corporate
+          <a class="nav-link" href="#brand-audit-corporate-identity">Brand Audit &amp; <br /> Corporate
             Identity</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html#graphic-designing-production">Graphic Designing <br /> &amp;
+          <a class="nav-link" href="#graphic-designing-production">Graphic Designing <br /> &amp;
             Production</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html#web-designing-digital-marketing">Web Designing &amp;<br /> Digital
+          <a class="nav-link" href="#web-designing-digital-marketing">Web Designing &amp;<br /> Digital
             Marketing</a>
         </li>
 
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html#brand-building-brand-management">Brand Building &amp; <br /> Brand
+          <a class="nav-link" href="#brand-building-brand-management">Brand Building &amp; <br /> Brand
             Management</a>
         </li>
 
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html#exhibitions-events">Exhibitions &amp; Events</a>
+          <a class="nav-link" href="#exhibitions-events">Exhibitions &amp; Events</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html#space-designing-project-management">Space Designing &amp;<br />
+          <a class="nav-link" href="#space-designing-project-management">Space Designing &amp;<br />
             Project Management</a>
         </li>
 
@@ -177,7 +182,7 @@
     </div>
   </section>
 
-  <section class="white-section">
+  <section class="white-section" id="brand-audit-corporate-identity">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -249,7 +254,7 @@
     </div>
   </section>
 
-  <section class="gray-section">
+  <section class="gray-section" id="graphic-designing-production">
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-2">
@@ -334,7 +339,7 @@
     </div>
   </section>
 
-  <section class="white-section">
+  <section class="white-section" id="web-designing-digital-marketing">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -419,7 +424,7 @@
     </div>
   </section>
 
-  <section class="gray-section">
+  <section class="gray-section" id="brand-building-brand-management">
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-2">
@@ -500,7 +505,7 @@
     </div>
   </section>
 
-  <section class="white-section">
+  <section class="white-section" id="exhibitions-events">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -573,7 +578,7 @@
     </div>
   </section>
   
-  <section class="gray-section">
+  <section class="gray-section" id="space-designing-project-management">
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-2">
@@ -649,7 +654,7 @@
     </div>
   </section>
 
-  <section class="design-approach-section">
+  <section class="design-approach-section" id="design-approach">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -806,7 +811,8 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="js/particles.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
