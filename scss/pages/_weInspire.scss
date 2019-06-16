@@ -1,0 +1,244 @@
+.we-inspire-title {
+  color: #ab5410;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.points-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .center-logo {
+      background: transparent url('../../images/infrastructure-center-logo.png') no-repeat;
+      background-position: center;
+      background-size: 163px;
+      height: 165px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 165px;
+    }
+}
+
+.infrastructure-points-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  width: 440px;
+
+  .list-item {
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 215px;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    width: 215px;
+
+    &.design-studio-item {
+      background-color: #80ba66;
+      background-image: -webkit-linear-gradient(-128deg, #80ba66, #2fa7b2 60%, #099ed5 88%);
+      background-image: -moz-linear-gradient(-128deg, #80ba66, #2fa7b2 60%, #099ed5 88%);
+      background-image: -o-linear-gradient(-128deg, #80ba66, #2fa7b2 60%, #099ed5 88%);
+      background-image: -ms-linear-gradient(-128deg, #80ba66, #2fa7b2 60%, #099ed5 88%);
+      background-image: linear-gradient(-128deg, #80ba66, #2fa7b2 60%, #099ed5 88%);
+    }
+
+    &.design-tools-item {
+      background-color: #fbbc12;
+      background-image: -webkit-linear-gradient(-128deg, #fbbc12, #fe9306 60%, #ff8000 88%);
+      background-image: -moz-linear-gradient(-128deg, #fbbc12, #fe9306 60%, #ff8000 88%);
+      background-image: -o-linear-gradient(-128deg, #fbbc12, #fe9306 60%, #ff8000 88%);
+      background-image: -ms-linear-gradient(-128deg, #fbbc12, #fe9306 60%, #ff8000 88%);
+      background-image: linear-gradient(-128deg, #fbbc12, #fe9306 60%, #ff8000 88%);
+    }
+
+    &.crosslink-item {
+      background-color: #e95738;
+      background-image: -webkit-linear-gradient(-128deg, #e95738, #d3315d 60%, #c91f6e 88%);
+      background-image: -moz-linear-gradient(-128deg, #e95738, #d3315d 60%, #c91f6e 88%);
+      background-image: -o-linear-gradient(-128deg, #e95738, #d3315d 60%, #c91f6e 88%);
+      background-image: -ms-linear-gradient(-128deg, #e95738, #d3315d 60%, #c91f6e 88%);
+      background-image: linear-gradient(-128deg, #e95738, #d3315d 60%, #c91f6e 88%);
+    }
+
+    &.pan-india-item {
+      background-color: #009cdf;
+      background-image: -webkit-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
+      background-image: -moz-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
+      background-image: -o-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
+      background-image: -ms-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
+      background-image: linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
+    }
+
+    .item-icon {
+      background: transparent url('../../images/design-studio.png') no-repeat;
+      background-position: center;
+      background-size: 69px;
+      height: 70px;
+      width: 128px;
+    }
+
+    .item-text {
+      color: #ffffff;
+      font-size: 17px;
+      line-height: 20px;
+      margin: 10px 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+.team-inspire-container {
+  background-image: -webkit-linear-gradient(-128deg, #fd9707, #fbba11 60%, #fbbc12 64%, #d4335b);
+	background-image: -moz-linear-gradient(-128deg, #fd9707, #fbba11 60%, #fbbc12 64%, #d4335b);
+	background-image: -o-linear-gradient(-128deg, #fd9707, #fbba11 60%, #fbbc12 64%, #d4335b);
+	background-image: -ms-linear-gradient(-128deg, #fd9707, #fbba11 60%, #fbbc12 64%, #d4335b);
+  background-image: linear-gradient(-128deg, #fd9707, #fbba11 60%, #fbbc12 64%, #d4335b);
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+  width: 480px;
+  
+  .image-mask {
+    background: transparent url('../../images/team-inspire-mask.png') no-repeat;
+    background-size: 100%;
+    border: 0px solid #fff;
+    height: 442px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 482px;
+    z-index: 10;
+  }
+
+  .round-container {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    height: 162px;
+    justify-content: center;
+    position: absolute;
+    width: 162px;
+    z-index: 20;
+
+    &.member-count {
+      left: calc(50% + 1px);
+      top: 12px;
+      transform: translateX(-50%);
+    }
+
+    &.specialized-expertise {
+      left: 12px;
+      bottom: 12px;
+    }
+
+    &.experience-in-years {
+      right: 12px;
+      bottom: 12px;
+    }
+
+    .item-icon {
+      background: transparent url('../../images/svg/badge.svg') no-repeat;
+      background-position: center;
+      background-size: 45px;
+      height: 45px;
+      width: 45px;
+    }
+
+    .item-text {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+.our-team-section {
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    .team-member {
+      background-color: #d3d3d3;
+      cursor: pointer;
+      height: 255px;
+      margin: 22px 22px 0 0;
+      position: relative;
+      width: 255px;
+
+      &:hover {
+        .overlay-effect {
+          opacity: 1;
+        }
+      }
+    }
+    .team-info {
+      background-color: #ffab00;
+      flex: 1;
+      height: 255px;
+      margin: 22px 22px 0 0;
+      padding: 25px 30px;
+    }
+
+    .overlay-effect {
+      justify-content: flex-end;
+      background-color: rgba(171, 84, 16, 0.8);
+      bottom: 0;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      opacity: 0;
+      padding: 25px 30px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all 0.5s ease;
+    }
+
+    .member-name {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 21px;
+      margin: 0 0 5px 0;
+    }
+
+    .member-designation {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1;
+      margin: 0 0 15px 0;
+    }
+
+    .member-location {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .member-info {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+  }
+}
