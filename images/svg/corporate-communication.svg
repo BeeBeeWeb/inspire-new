@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.793689in" height="0.497122in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 562 352"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#ab5410;stroke-width:16.7254}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_900797984">
+   <path class="fil0 str0" d="M223 68c0,0 -28,44 -32,47 -4,4 -22,26 -11,36 10,10 23,10 37,1 13,-9 47,-48 58,-44 11,4 99,47 156,99l11 10c0,0 35,-22 44,-37l2 -2 -65 -126c-10,7 -25,17 -34,16 -14,-1 -89,-32 -166,-1z"/>
+   <rect class="fil0 str0" transform="matrix(0.739717 -0.382504 0.382504 0.739717 414.665 36.7334)" width="82" height="214" rx="9" ry="9"/>
+   <rect class="fil0 str0" transform="matrix(-0.712936 -0.430364 -0.430364 0.712936 155.397 40.1568)" width="82" height="214" rx="9" ry="9"/>
+   <rect class="fil0 str0" transform="matrix(0.567645 0.433713 -0.50559 0.661718 182.747 199.728)" width="61" height="122" rx="22" ry="22"/>
+   <rect class="fil0 str0" transform="matrix(-0.567645 -0.433713 -0.459771 0.601751 246.375 259.892)" width="61" height="122" rx="22" ry="22"/>
+   <rect class="fil0 str0" transform="matrix(0.567645 0.433713 -0.346414 0.453389 237.885 271.004)" width="61" height="122" rx="22" ry="22"/>
+   <rect class="fil0 str0" transform="matrix(-0.567645 -0.433713 -0.363867 0.476231 166.935 220.424)" width="61" height="122" rx="22" ry="22"/>
+   <path class="fil0 str0" d="M251 325c0,0 27,16 56,17 29,1 35,-27 35,-27 0,0 18,8 30,-4 13,-13 0,-28 0,-28 0,0 16,14 32,-1 16,-15 1,-29 1,-29l9 4c4,0 23,6 32,-14 4,-10 1,-18 -5,-24m-228 -135c-37,0 -70,-24 -70,-24m-72 119l3 2 33 39"/>
+   <line class="fil0 str0" x1="329" y1="204" x2="406" y2= "252" />
+   <line class="fil0 str0" x1="302" y1="240" x2="379" y2= "287" />
+   <line class="fil0 str0" x1="281" y1="288" x2="348" y2= "317" />
+  </g>
+ </g>
+</svg>

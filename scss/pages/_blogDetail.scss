@@ -1,0 +1,61 @@
+.title-container {
+  position: relative;
+  .back-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+svg {
+  .back-btn-shape {
+      transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .back-btn-shape {
+      fill: #848484;
+    }
+  }
+}
+
+.blog-heading {
+  display: flex;
+
+  .blog-info {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 40%;
+
+    .blog-title {
+      font-size: 62px;
+      line-height: 1;
+    }
+
+    .blog-author {
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
+
+  .blog-image {
+    overflow: hidden;
+    height: 315px;
+    width: 60%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.blog-description {
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+  }
+}

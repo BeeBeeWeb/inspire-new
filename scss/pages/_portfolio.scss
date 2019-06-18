@@ -7,16 +7,18 @@
     .nav-pills {
 
         .nav-link {
+            border: 1px solid transparent;
+            border-radius: 50px;
             color: #010101;
             font-size: 16px;
             height: 100%;
+            transition: all 0.3s ease;
         }
     
         .nav-link.active {
             color: #ab5410;
             background: transparent;
             border: 1px solid #ab5410;
-            border-radius: 50px;
         }
     }
 }
@@ -24,17 +26,62 @@
 .grid-container {
     min-height: 500px;
 
+    .portfolio-image-grid.tab-1 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item5 item6 item7 item8'
+            'item9 item10 item11 item12';
+    }
+
+    .portfolio-image-grid.tab-2 {
+        grid-template-areas:
+            'item1 item2 item3 item3'
+            'item4 item5 item6 item7'
+            'item4 item8 item9 item10';
+    }
+
+    .portfolio-image-grid.tab-3 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item1 item5 item5 item6'
+            'item7 item8 item9 item9';
+    }
+
+    .portfolio-image-grid.tab-4 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item5 item5 item6 item4'
+            'item7 item8 item8 item8';
+    }
+
+    .portfolio-image-grid.tab-5 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item5 item5 item6 item7'
+            'item8 item9 item9 item7';
+    }
+
+    .portfolio-image-grid.tab-6 {
+        grid-template-areas:
+            'item1 item1 item2 item3'
+            'item4 item5 item6 item6'
+            'item4 item7 item8 item9';
+    }
+
     .portfolio-image-grid {
         display: grid;
         grid-gap: 5px;
-        grid-template-areas:
-            'item1 item1 item2 item3'
-            'item4 item5 item6 item7'
-            'item8 item9 item9 item7';
+
+        p {
+            color: #010101;
+            font-size: 18px;
+        }
     
         .grid-item {
             text-align: center;
             overflow: hidden;
+            // background: pink;
+            // padding: 8px;
     
             img {
                 width: 100%;
@@ -77,9 +124,17 @@
     .testimonials-header {
         font-size: 38px;
         font-weight: 700;
+        position: relative;
+        
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 
     #testimonials-carousel {
+        font-size: 14px;
         
         img {
             width: 100%;
