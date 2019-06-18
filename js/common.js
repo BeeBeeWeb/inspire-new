@@ -74,4 +74,8 @@ $(document).ready(function () {
       'linear'
     )
   })
+
+  $(".design-link").click(function(){
+    $(".collapse").collapse('toggle');
+  });
 });
