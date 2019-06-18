@@ -44,13 +44,11 @@
   margin-top:40px;
   position: relative;
   li{
-    flex-basis:14.666%;
-    margin-left: 2%;
+    flex-basis:16.666%;
     &:first-child {
       a{
         padding-left: 0;
         margin-left:0;
-
       }
     }
     &.active{
@@ -66,11 +64,12 @@
     line-height: 20px;
     font-weight: 400;
     padding: 0 0 10px;
-    
+
     display: inline-block;
     transition: all 0.2s Ease-in-out;
     &:hover{
-      margin-top: 14px;
+      /* margin-top: 14px;*/
+      border-bottom: 4px solid #ab5410;
     }
   }
 
