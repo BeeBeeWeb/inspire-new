@@ -276,3 +276,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: 40px 0 0 0;
   }
 }
+//  Starts Scrol Spy code
+.horizontal-nav{
+  z-index: 100;
+  right: 15px;
+  top: 135px;
+}
+.horizontal-nav .nav-link{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 0;
+  display: block;
+}
+.horizontal-nav li+li{
+  margin-top: 10px;
+}
+.horizontal-nav .nav-pills .nav-link.active, 
+.horizontal-nav .nav-pills .show>.nav-link{
+  background: #f1bf31;
+}
+
+//  Ends Scrol Spy code
