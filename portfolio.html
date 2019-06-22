@@ -126,37 +126,37 @@
 
           <li class="nav-item">
             <a class="nav-link active" id="brand-audit-corporate-identity-tab" data-toggle="tab"
-              href="#brand-audit-corporate-identity" role="tab" aria-controls="brand-audit-corporate-identity"
-              aria-selected="true">Brand Audit & Corporate Identity</a>
+            data-target="#brand-audit-corporate-identity" role="tab" aria-controls="brand-audit-corporate-identity"
+              aria-selected="true">Brand Audit &amp; Corporate Identity</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" id="graphic-designing-production-tab" data-toggle="tab"
-              href="#graphic-designing-production" role="tab" aria-controls="profile" aria-selected="false">Graphic
-              Designing & Production</a>
+              data-target="#graphic-designing-production" role="tab" aria-controls="profile" aria-selected="false">Graphic
+              Designing &amp; Production</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" id="web-designing-digital-marketing-tab" data-toggle="tab"
-              href="#web-designing-digital-marketing" role="tab" aria-controls="web-designing-digital-marketing"
-              aria-selected="false">Web Designing & Digital Marketing</a>
+            data-target="#web-designing-digital-marketing" role="tab" aria-controls="web-designing-digital-marketing"
+              aria-selected="false">Web Designing &amp; Digital Marketing</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" id="brand-building-brand-management-tab" data-toggle="tab"
-              href="#brand-building-brand-management" role="tab" aria-controls="web-designing-digital-marketing"
+            data-target="#brand-building-brand-management" role="tab" aria-controls="web-designing-digital-marketing"
               aria-selected="false">Brand Building & Brand Management</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" id="exhibitions-events-tab" data-toggle="tab" href="#exhibitions-events" role="tab"
-              aria-controls="exhibitions-events" aria-selected="false">Exhibitions &amp;<br/>Events</a>
+            <a class="nav-link" id="exhibitions-events-tab" data-toggle="tab" data-target="#exhibitions-events" role="tab"
+              aria-controls="exhibitions-events" aria-selected="false">Exhibitions &amp;<br/> Events</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" id="space-designing-project-management-tab" data-toggle="tab"
-              href="#space-designing-project-management" role="tab" aria-controls="space-designing-project-management"
-              aria-selected="false">Space Designing & Project Management</a>
+            data-target="#space-designing-project-management" role="tab" aria-controls="space-designing-project-management"
+              aria-selected="false">Space Designing &amp; Project Management</a>
           </li>
 
         </ul>
@@ -710,6 +710,10 @@
     </div>
   </footer>
 
+  <!-- <div id="scrollToTop">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAATCAYAAABobNZCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7VpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDI4MDExNzQwNzIwNjgxMThEQkJGNTAwMDFENjJCODEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjQ3MDE3RkUzN0M2MTFFMkI5MUNENTYyQzU3ODhFNEUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjQ3MDE3RkQzN0M2MTFFMkI5MUNENTYyQzU3ODhFNEUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MjY1MDg5QjNGMkZFMjExQUM3Q0Q4Nzg2MUU1NkM3RSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMjgwMTE3NDA3MjA2ODExOERCQkY1MDAwMUQ2MkI4MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Psc29coAAAE7SURBVHjaYvj//z8DmTgOiM8CsTK5ZpBrccR/BDhPrgPIsTgKiH//RwVkhQCpFscA8Y//2AHIAaq0stwNiL/8xw+OAbEQtS13AuKX/4kD24FYgFqW25FgMUkOIMbiF//JA9uAmJ9cy22B+Dkew/8C8R0CDtgKxMKkWu5AhI/bgVgNiE8SEQVixFpuD8TPCBjYg6RekUgHiBCy3IkIi7uAmAlNnwIQnyAiDQjistyRiKAGWcyKI6pkiAiBbci5AEQwQoOakMXdeCxGdsBpIqIAFAKMIA36QPyWQKrugTqSmHJBhsgoUGNiYGD4BsQPGXCDfiAuAeL/DMSBJ0AcCsQn8ai5B8Q/kFPsGRxBTW61K4cjBCZgS3BKaPHVSYHFuHJBH76sBgqBo0DciyU7UeKAw0A8EYiZkeUAAgwAswRZ5V7ztVUAAAAASUVORK5CYII=" alt="">
+  </div> -->
+
 
   <!-- <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -717,17 +721,16 @@
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
-  <!-- <script type="text/javascript" src="js/common.js"></script> -->
+  <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
   <script>
     "use strict";
     $(document).ready(function () {
       // executes when HTML-Document is loaded and DOM is ready
+
       var hash = document.location.hash;
       if (hash) {
-        console.log('ifffffff ', hash);
-
         $('#portfolioTabs a[href=\\' + hash + ']').tab('show');
-
       }
 
       if (!hash || hash === '#brand-audit-corporate-identity') {
