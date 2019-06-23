@@ -80,11 +80,30 @@
     }
 
     .item-icon {
-      background: transparent url("../images/design-studio.png") no-repeat;
-      background-position: center;
-      background-size: 69px;
       height: 70px;
       width: 128px;
+
+      &.design-studio {
+        background-image: url("../images/svg/design-studio.svg");
+      }
+      
+      &.design-tools {
+        background-image: url("../images/svg/design-tools.svg");
+      }
+
+      &.crosslink {
+        background-image: url("../images/svg/crosslink.svg");
+      }
+
+      &.pan-india {
+        background-image: url("../images/svg/pan-india.svg");
+      }
+    }
+
+    .item-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     .item-text {
@@ -150,11 +169,26 @@
     }
 
     .item-icon {
-      background: transparent url('../images/svg/badge.svg') no-repeat;
-      background-position: center;
-      background-size: 45px;
       height: 45px;
       width: 45px;
+      
+      &.member-count-icon {
+        background-image: url('../images/svg/member-count.svg');
+      }
+
+      &.specialized-expertise-icon {
+        background-image: url('../images/svg/specialized-experties.svg');
+      }
+
+      &.experience-in-years-icon {
+        background-image: url('../images/svg/experience-in-years.svg');
+      }
+    }
+
+    .item-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     .item-text {

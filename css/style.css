@@ -536,11 +536,20 @@ h1, h2, h3, h4, h5, h6 {
       background-image: -ms-linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%);
       background-image: linear-gradient(-128deg, #009cdf, #006eba 60%, #0059a9 88%); }
     .infrastructure-points-list .list-item .item-icon {
-      background: transparent url("../images/design-studio.png") no-repeat;
-      background-position: center;
-      background-size: 69px;
       height: 70px;
       width: 128px; }
+      .infrastructure-points-list .list-item .item-icon.design-studio {
+        background-image: url("../images/svg/design-studio.svg"); }
+      .infrastructure-points-list .list-item .item-icon.design-tools {
+        background-image: url("../images/svg/design-tools.svg"); }
+      .infrastructure-points-list .list-item .item-icon.crosslink {
+        background-image: url("../images/svg/crosslink.svg"); }
+      .infrastructure-points-list .list-item .item-icon.pan-india {
+        background-image: url("../images/svg/pan-india.svg"); }
+    .infrastructure-points-list .list-item .item-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
     .infrastructure-points-list .list-item .item-text {
       color: #ffffff;
       font-size: 17px;
@@ -591,11 +600,18 @@ h1, h2, h3, h4, h5, h6 {
       right: 12px;
       bottom: 12px; }
     .team-inspire-container .round-container .item-icon {
-      background: transparent url("../images/svg/badge.svg") no-repeat;
-      background-position: center;
-      background-size: 45px;
       height: 45px;
       width: 45px; }
+      .team-inspire-container .round-container .item-icon.member-count-icon {
+        background-image: url("../images/svg/member-count.svg"); }
+      .team-inspire-container .round-container .item-icon.specialized-expertise-icon {
+        background-image: url("../images/svg/specialized-experties.svg"); }
+      .team-inspire-container .round-container .item-icon.experience-in-years-icon {
+        background-image: url("../images/svg/experience-in-years.svg"); }
+    .team-inspire-container .round-container .item-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
     .team-inspire-container .round-container .item-text {
       font-size: 16px;
       line-height: 20px;
