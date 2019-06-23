@@ -79,3 +79,18 @@ $(document).ready(function () {
     $(".collapse").collapse('toggle');
   });
 });
+
+
+//Add dynamically 'sticky' class to page header
+
+window.onscroll = function () { addStickyClass() };
+
+var header = document.getElementById("page-header");
+
+function addStickyClass() {
+  if (window.pageYOffset > 100) {
+    header.classList.add("sticky","home-page");
+  } else {
+    header.classList.remove("sticky","home-page");
+  }
+}
