@@ -101,9 +101,11 @@ h1, h2, h3, h4, h5, h6 {
     background-position-x: 80%;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1367px) {
   .home-banner {
     background-position-x: 70%;
+    background-size: 1700px;
+    background-position-y: 52%;
   }
 }
 .white-section, .gray-section {
