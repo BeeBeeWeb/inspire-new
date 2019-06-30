@@ -88,6 +88,11 @@ $(document).ready(function () {
     scrollImg: true
   });
   
+  $(".team-member").click(function(){
+    $(".team-info").removeClass("active");
+    var current = $(this).attr("data-team");
+    $("#"+current).addClass("active");
+  });
 });
 
 
