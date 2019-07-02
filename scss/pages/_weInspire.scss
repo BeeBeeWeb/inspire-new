@@ -281,7 +281,7 @@
     position: relative;
     top: -100%;
     display: none;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
     &.active {
       top:0;
       display: block;
