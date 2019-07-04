@@ -18,6 +18,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <noscript>
     <div class="noscriptWrap">
       <p>For full functionality of this site it is necessary to enable JavaScript.
@@ -150,9 +152,7 @@
           <form action="" id="contact-us-form" method="post">
 
             <div class="row">
-
               <div class="col">
-
                 <div class="form-group">
                   <label for="firstName">First Name</label>
                   <input type="text" class="form-control" id="firstName" name="firstName">
@@ -165,11 +165,9 @@
                   <label for="companyName">Company</label>
                   <input type="text" class="form-control" id="companyName" name="companyName">
                 </div>
-
               </div>
 
               <div class="col">
-
                 <div class="form-group">
                   <label for="lastName">Last Name</label>
                   <input type="text" class="form-control" id="lastName" name="lastName">
@@ -182,20 +180,75 @@
                   <label for="yourRole">Your role</label>
                   <input type="text" class="form-control" id="yourRole" name="yourRole">
                 </div>
-
               </div>
+            </div>
 
+            <div class="row checkboxes-section">
+              <div class="col-12">
+                <div class="checkboxes-heading">I would like to know more about following Service Packages</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Brand Audit & Corporate Identity</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2">
+                      <label class="custom-control-label" for="customCheck2">Brand Building & Brand Management</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3">Graphic Designing & Production</label>
+                    </div>
+                  
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck4">
+                      <label class="custom-control-label" for="customCheck4">Exhibitions & Events</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck5">
+                      <label class="custom-control-label" for="customCheck5">Web Designing & Digital Marketing</label>
+                    </div>
+                  
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck6">
+                      <label class="custom-control-label" for="customCheck6">Space Designing & Project Management</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck7">
+                  <label class="custom-control-label" for="customCheck7">Also, please get in touch with me to discuss our requirements</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
               <div class="col-12">
                 <div class="form-group">
                   <label for="enquiryDetails">What can we do for you?</label>
                   <textarea class="form-control" id="enquiryDetails" name="enquiryDetails" rows="6"></textarea>
                 </div>
               </div>
+            </div>
 
-              <div class="col-12 text-right">
-                  <button type="submit" class="form-btn">Submit</button>
+            <div class="row">
+              <div class="col-12 recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LfHZKsUAAAAAAFNHc0eYK_z9gGvVoBx0sCI1OHd"></div>
+                <button type="submit" class="form-btn">Submit</button>
               </div>
-
             </div>
           </form>
         </div>
@@ -302,6 +355,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
   <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
+  
   <script>
     'use-strict';
     $(document).ready(function () {

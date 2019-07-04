@@ -214,10 +214,11 @@
     .team-member {
       background-color: #d3d3d3;
       cursor: pointer;
-      height: 255px;
-      margin: 22px 22px 0 0;
+      // height: 255px;
+
+      margin: 2% 2% 0 0;
       position: relative;
-      width: 255px;
+      width: 18%;
 
       &:hover {
         .overlay-effect {
@@ -225,14 +226,6 @@
         }
       }
     }
-    .team-info {
-      background-color: #ffab00;
-      flex: 1;
-      height: 255px;
-      margin: 22px 22px 0 0;
-      padding: 25px 30px;
-    }
-
     .overlay-effect {
       justify-content: flex-end;
       background-color: rgba(171, 84, 16, 0.8);
@@ -242,7 +235,7 @@
       flex-direction: column;
       left: 0;
       opacity: 0;
-      padding: 25px 30px;
+      padding: 25px 20px;
       position: absolute;
       right: 0;
       top: 0;
@@ -274,5 +267,24 @@
         font-weight: 300;
         line-height: 20px;
       }
+  }
+}
+.team-info-wrap {
+  background-color: #ffab00;
+  flex: 1;
+  // height: 255px;
+  margin: 2% 2% 0 0;
+  padding: 25px 30px;
+  overflow: auto;
+  max-height: 200px;
+  .team-info{
+    position: relative;
+    top: -100%;
+    display: none;
+    transition: all 0.2s ease-in;
+    &.active {
+      top:0;
+      display: block;
+    }
   }
 }
