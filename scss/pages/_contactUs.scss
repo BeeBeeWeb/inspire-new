@@ -1,3 +1,31 @@
 .contact-form-header {
   font-size: 38px;
 }
+
+.checkboxes-heading {
+  margin: 0 0 15px 0;
+}
+
+.custom-checkbox {
+  margin: 0 0 15px 0;
+
+  .custom-control-label {
+    &::before {
+      border-radius: 0;
+    }
+  }
+}
+
+#enquiryDetails {
+  resize: none;
+}
+.recaptcha-container {
+  align-items: end;
+  display: flex;
+  justify-content: flex-end;
+
+  .g-recaptcha {
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+}
