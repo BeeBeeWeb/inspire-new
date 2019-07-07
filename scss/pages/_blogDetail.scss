@@ -34,6 +34,9 @@ svg {
       font-size: 62px;
       line-height: 1;
     }
+    .blog-title-sm{
+      font-size: 40px;
+    }
 
     .blog-author {
       font-size: 30px;
@@ -54,8 +57,15 @@ svg {
 
 .blog-description {
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     text-align: justify;
   }
+}
+.brand-list li{
+  font-size: 16px;
+  line-height: 24px;
+}
+.brand-list li+li{
+  margin-top: 10px;
 }
