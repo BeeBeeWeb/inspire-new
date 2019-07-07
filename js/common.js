@@ -83,10 +83,6 @@ $(document).ready(function () {
   $(".design-link").click(function(){
     $(".collapse").collapse('toggle');
   });
-
-  $.scrollUp({
-    scrollImg: true
-  });
   
   $(".team-member").click(function(){
     $(".team-info").removeClass("active");
@@ -98,7 +94,10 @@ $(document).ready(function () {
 
 //Add dynamically 'sticky' class to page header
 
-window.onscroll = function () { addStickyClass() };
+window.onscroll = function () { 
+  addStickyClass();
+  showScrollTopBtn();
+};
 
 var header = document.getElementById("page-header");
 
@@ -107,5 +106,17 @@ function addStickyClass() {
     header.classList.add("sticky","home-page");
   } else {
     header.classList.remove("sticky","home-page");
+  }
+}
+
+function showScrollTopBtn () {
+  if (window.pageYOffset > 100) {
+    if ($('#scrollUp').is(":hidden")) {
+      $('#scrollUp').show();
+    }
+  } else {
+    if ($('#scrollUp').is(":visible")) {
+      $('#scrollUp').hide();
+    }
   }
 }
