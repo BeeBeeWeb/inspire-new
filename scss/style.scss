@@ -53,9 +53,10 @@ form {
 }
 
 #scrollUp {
+  position: fixed;
   background-image: url(/images/top-arrow.png);
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 30px;
   width: 38px;
   height: 38px;
 }
