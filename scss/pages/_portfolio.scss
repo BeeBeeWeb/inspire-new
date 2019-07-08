@@ -25,7 +25,7 @@
 }
 
 .grid-container {
-    min-height: 500px;
+    min-height: 816px;
 
     .portfolio-image-grid.tab-1 {
         grid-template-areas:
@@ -157,10 +157,21 @@
     }
 
 }
-.tab-1{
+.tab-1 {
     .cboxElement{
         padding: 25px;
         display: block;
         background: #f2f2f2;
+    }
+}
+
+#logos-tabset-links{
+    img {
+        cursor: pointer;
+        filter: grayscale(1);
+
+        &.active {
+            filter: grayscale(0);
+        }
     }
 }
