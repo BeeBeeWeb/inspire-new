@@ -187,15 +187,34 @@
 	opacity: 0.9!important;
     filter: alpha(opacity = 90)!important;
 }
+#cboxPrevious,
+#cboxNext,
+#cboxClose {
+    background-position-y: center;
+    background-size: 62%;
+    outline: none;
+}
+#cboxPrevious:hover,
+#cboxNext:hover,
+#cboxClose:hover{
+    background-position-y: center;
+}
 #cboxPrevious{
-	left: -30px;
+    left: -30px;
+    background-image: url("../images/svg/Previous.svg");
 }
 #cboxNext{
-	right: -30px;
+    right: -30px;
+    background-image: url("../images/svg/Next.svg");
 }
 #cboxCurrent{
 	right: 50px;
 }
 #cboxClose{
-	top: -20px;
+    top: -25px;
+    background-image: url("../images/svg/Close.svg");
+    height: 24px;
+}
+#cboxContent{
+    margin-top: 35px;
 }
