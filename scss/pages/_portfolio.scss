@@ -175,3 +175,27 @@
         }
     }
 }
+#cboxLoadedContent{
+	border: none;
+}
+#cboxLoadedContent,
+#cboxWrapper,
+#colorbox, #cboxOverlay, #cboxWrapper{
+	overflow: visible!important;
+}
+#cboxOverlay{
+	opacity: 0.9!important;
+    filter: alpha(opacity = 90)!important;
+}
+#cboxPrevious{
+	left: -30px;
+}
+#cboxNext{
+	right: -30px;
+}
+#cboxCurrent{
+	right: 50px;
+}
+#cboxClose{
+	top: -20px;
+}
