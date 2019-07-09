@@ -12,13 +12,15 @@
 }
 .main-header{
   display: flex;
-  height: 268px;
+  // height: 268px;
+  height: 225px;
   position: relative;
   z-index: 30;
 
   .navbar {
     flex: 1;
-    height: 268px;
+    // height: 268px;
+    height: 190px;
     transition: all 0.3s ease;
   }
 
@@ -34,7 +36,8 @@
       // background-color: #ffffff;
       background-color: #f1bf31;
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-      height: 124px;
+      // height: 124px;
+      height: 110px;
     }
 
     .navbar-brand {

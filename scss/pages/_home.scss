@@ -104,12 +104,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1367px) {
   .home-banner {
     background-position-x: 70%;
-    background-size: 1700px;
-    background-position-y: 52%;
+    // background-size: 1700px;
+    background-size: 1650px;
+    background-position-y: 70%;
   }
 }
 .white-section, .gray-section {
   padding: 140px 0;
+  // padding: 100px 0;
 
   .title {
     font-size: 38px;
@@ -163,7 +165,8 @@ h1, h2, h3, h4, h5, h6 {
       flex-basis: 31%;
       // height: 32px;
       line-height: 1.2;
-      margin: 15px 0 0;
+      // margin: 15px 0 0;
+      margin: 0 0 15px;
       padding: 0;
 
       .icon {
@@ -218,7 +221,10 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-
+#brand-audit-corporate-identity .features-list{
+  position: relative;
+  top: -40px;
+}
 .gray-section {
   background-color: #f0f0f0;
 }
@@ -258,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .we-inspire-section {
-  background-color: #ffb41b;
+  background-color: #f0f0f0;
   padding: 120px 0;
 
   .description {
@@ -299,8 +305,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .horizontal-nav .nav-link{
   box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   border-radius: 40%;
   padding: 0;
   display: block;
