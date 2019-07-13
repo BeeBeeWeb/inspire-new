@@ -81,8 +81,12 @@
         .grid-item {
             text-align: center;
             overflow: hidden;
-            // background: pink;
-            // padding: 8px;
+            filter: grayscale(1);
+            transition: all 0.2s;
+            
+            &:hover {
+                filter: grayscale(0);
+            }
     
             img {
                 width: 100%;
