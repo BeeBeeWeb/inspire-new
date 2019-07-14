@@ -430,10 +430,13 @@
                 <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
-                    Established in 1987, Fleetguard Filters Pvt Ltd. is India's Leading Manufacturer of heavy duty Air, Fuel, Lube,
-                    Hydraulic filters, Air Intake Systems, Coolants and Chemical Products for all commercial engines. It is a part of the
+                    Established in 1987, Fleetguard Filters Pvt Ltd. is India's Leading Manufacturer of heavy duty Air,
+                    Fuel, Lube,
+                    Hydraulic filters, Air Intake Systems, Coolants and Chemical Products for all commercial engines. It
+                    is a part of the
                     renowned Cummins Filtration group, which is a Cummins group company worldwide.
-                    Inspire is the official design agency for designing, branding, exhibition and event support for their year round
+                    Inspire is the official design agency for designing, branding, exhibition and event support for
+                    their year round
                     promotion activities along with their major OEM customers in India.
                   </p>
                 </div>
@@ -492,9 +495,12 @@
                 <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
-                    Constro is one of India's biggest by-yearly International Trade Fair of Construction Machinery, Materials, Methods &
-                    Projects. With its success journey of over 25 years in February 2014 Constro completed its 13th consecutive edition.
-                    Inspire is the official design agency for brand promotion and publishing of its official News Letters and Hand book for
+                    Constro is one of India's biggest by-yearly International Trade Fair of Construction Machinery,
+                    Materials, Methods &
+                    Projects. With its success journey of over 25 years in February 2014 Constro completed its 13th
+                    consecutive edition.
+                    Inspire is the official design agency for brand promotion and publishing of its official News
+                    Letters and Hand book for
                     last 6 years.
                   </p>
                 </div>
@@ -550,7 +556,10 @@
                 <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
-                    10th Mile is one of the major hospitality group of Pune having three properties namely, a restaurant 'Metway Grill, open air party lawns 'Harmony Express' and indoor conferencing hall 'Opinion Forum' with banqueting and event management support. Our brand building campaign has managed to create a unique personality of 10th Mile and achieved desired marketing objectives.
+                    10th Mile is one of the major hospitality group of Pune having three properties namely, a restaurant
+                    'Metway Grill, open air party lawns 'Harmony Express' and indoor conferencing hall 'Opinion Forum'
+                    with banqueting and event management support. Our brand building campaign has managed to create a
+                    unique personality of 10th Mile and achieved desired marketing objectives.
                   </p>
                 </div>
             </template>
@@ -609,10 +618,13 @@
                 </div>
                 <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
-                  Indian Institute of Interior Designers, IIID, is a national association of Interior Designers and Architects aiming to
-                  establish good professional and trade practices and ethics among interior design profession in India. IIID nationally
+                  Indian Institute of Interior Designers, IIID, is a national association of Interior Designers and
+                  Architects aiming to
+                  establish good professional and trade practices and ethics among interior design profession in India.
+                  IIID nationally
                   has over 8000 members, 28 chapters and centers.
-                  Our design services have been appreciated nationally and enabled IIID to create a unique brand association amongst the
+                  Our design services have been appreciated nationally and enabled IIID to create a unique brand
+                  association amongst the
                   design fraternity of India.
                 </div>
             </template>
@@ -668,7 +680,11 @@
                 <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
-                    A five decade old group, Accurate is a pioneer in manufacturing of Quality Measuring Instruments in India, offering comprehensive range of products and integrated measuring solutions for Automotive, Railways, Aerospace and Engineering applications in global markets. Our design and brand communication support have created a unique positioning of Accurate enabling them to compete with global competitors.
+                    A five decade old group, Accurate is a pioneer in manufacturing of Quality Measuring Instruments in
+                    India, offering comprehensive range of products and integrated measuring solutions for Automotive,
+                    Railways, Aerospace and Engineering applications in global markets. Our design and brand
+                    communication support have created a unique positioning of Accurate enabling them to compete with
+                    global competitors.
                   </p>
                 </div>
             </template>
@@ -1310,9 +1326,10 @@
     $(document).ready(function () {
       // executes when HTML-Document is loaded and DOM is ready
 
+      // this is for tab "Brand Building & Brand Management"
+      // it will load the content for that brand from its template.
       $("#logos-tabset-links div").click(function (e) {
 
-        console.log('sdfsdfsdfds33333333', event.target.id);
         $("#logos-tabset-links img").removeClass('active');
         $(this).children('img').addClass('active');
 
@@ -1335,11 +1352,31 @@
 
       });
 
+
+      // this is for portfolio links in the footer,
+      // it will show clicked tab and scroll to top
+      window.addEventListener("hashchange", function () {
+        if (document.location.hash) {
+          $('#portfolioTabs a[data-target=\\' + document.location.hash + ']').tab('show');
+
+          $('html, body').animate(
+            {
+              scrollTop: $('#portfolioTabs').offset().top - 120,
+            },
+            500,
+            'linear'
+          );
+        }
+      });
+
+      // on page load this will open the tab present in url hash
       var hash = document.location.hash;
       if (hash) {
-        $('#portfolioTabs a[href=\\' + hash + ']').tab('show');
+        $('#portfolioTabs a[data-target=\\' + hash + ']').tab('show');
       }
 
+      // if hash is not present in url or hash equals to first tab
+      // then we need to load the content of that
       if (!hash || hash === '#brand-audit-corporate-identity') {
         let template = document.querySelector(`#brand-audit-corporate-identity-tab-template`);
         let host = document.querySelector(`#brand-audit-corporate-identity-tab-host`);
@@ -1347,10 +1384,11 @@
         host.appendChild(clone);
       }
 
+      // this handles the on tab change events and load the 
+      // content of that tab from its template
       $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         // e.target newly activated tab
         // e.relatedTarget previous active tab
-        console.log('shown');
         let template = document.querySelector(`#${e.target.id}-template`);
         if (template) {
 
@@ -1362,17 +1400,28 @@
             host.appendChild(clone);
           }
 
+          // need to activate gallery for that tab
           $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%' });
 
         }
 
+        $('html, body').animate(
+          {
+            scrollTop: $('#portfolioTabs').offset().top - 120,
+          },
+          500,
+          'linear'
+        );
+
       });
 
+      // this is to activate the gallery on page load
       $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%', maxHeight: '100%' });
 
     });
 
 
+    // initialize carousel in at the bottom , testimonials section
     $('#testimonials-carousel').carousel({
       interval: 5000
     });

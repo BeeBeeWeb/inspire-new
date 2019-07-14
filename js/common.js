@@ -69,15 +69,20 @@ $(document).ready(function () {
   // }
 
   $('a[href*="#"]').on('click', function (e) {
-    e.preventDefault();
+    
+    // console.log($(this).attr('href'));
+    if ($($(this).attr('href')).offset()) {
+      e.preventDefault();
+  
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top - 20,
+        },
+        500,
+        'linear'
+      );
+    }
 
-    $('html, body').animate(
-      {
-        scrollTop: $($(this).attr('href')).offset().top - 20,
-      },
-      500,
-      'linear'
-    );
   });
 
   $(".design-link").click(function(){
