@@ -113,12 +113,12 @@
     line-height: 20px;
     font-weight: 400;
     padding: 0 0 10px;
-
+    border-bottom: 4px solid transparent;
     display: inline-block;
     transition: all 0.2s Ease-in-out;
     &:hover{
       /* margin-top: 14px;*/
-      border-bottom: 4px solid #ab5410;
+      border-bottom-color: #ab5410;
       transform: scale(1.1);
     }
   }
