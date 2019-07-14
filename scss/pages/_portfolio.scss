@@ -155,8 +155,14 @@
                 width: 10px;
                 height: 10px;
                 background: transparent;
-                border: 2px solid black;
+                border: 0px solid transparent;
                 border-radius: 100%;
+                opacity: 1;
+                box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
+            }
+
+            li.active {
+                background: #f1bf31;
             }
         }
     }
