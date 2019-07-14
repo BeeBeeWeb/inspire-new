@@ -10,6 +10,8 @@
   margin: 0 0 15px 0;
 
   .custom-control-label {
+    font-weight: 600;
+
     &::before {
       border-radius: 0;
     }
@@ -27,5 +29,10 @@
   .g-recaptcha {
     display: inline-block;
     margin: 0 15px 0 0;
+  }
+}
+.contact-us {
+  address {
+    margin: 90px 0 50px 0;
   }
 }

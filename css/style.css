@@ -13,20 +13,20 @@
 
 .main-header {
   display: flex;
-  height: 268px;
+  height: 225px;
   position: relative;
   z-index: 30; }
   .main-header .navbar {
     flex: 1;
-    height: 268px;
+    height: 190px;
     transition: all 0.3s ease; }
   .main-header .navbar-brand img {
     max-height: 115px;
     transition: all 0.3s ease; }
   .main-header.sticky .navbar {
-    background-color: #ffffff;
+    background-color: #f1bf31;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    height: 124px; }
+    height: 110px; }
   .main-header.sticky .navbar-brand img {
     max-height: 80px; }
   .main-header.small-header {
@@ -196,10 +196,14 @@ h1, h2, h3, h4, h5, h6 {
   fill: #cccccc; }
 
 .home-banner {
-  background-color: #ffb41b;
+  background: #f1bf31 url("../images/svg/home-page-banner-bg.svg") no-repeat;
+  background-size: 1920px;
   min-height: 100vh;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  z-index: 101;
+  background-position-x: 93%;
+  background-position-y: 65%; }
   .home-banner .particles-layer,
   .home-banner .background-overlay {
     position: absolute;
@@ -207,9 +211,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     top: 0; }
-  .home-banner .background-overlay {
-    background: linear-gradient(45deg, #ffb41b 45%, rgba(0, 0, 0, 0) 65%, #ffb41b 85%);
-    pointer-events: none; }
   .home-banner h1 {
     font-size: 45px;
     line-height: 54px;
@@ -223,6 +224,16 @@ h1, h2, h3, h4, h5, h6 {
     pointer-events: none; }
   .home-banner .emphasis {
     font-weight: 400; }
+
+@media (max-width: 1535px) {
+  .home-banner {
+    background-position-x: 80%; } }
+
+@media (max-width: 1367px) {
+  .home-banner {
+    background-position-x: 70%;
+    background-size: 1650px;
+    background-position-y: 70%; } }
 
 .white-section, .gray-section {
   padding: 140px 0;
@@ -259,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
       display: flex;
       flex-basis: 31%;
       line-height: 1.2;
-      margin: 15px 0 0;
+      margin: 0 0 15px;
       padding: 0; }
       .white-section .features-list .list-group-item .icon, .gray-section .features-list .list-group-item .icon {
         border-radius: 50%;
@@ -297,6 +308,10 @@ h1, h2, h3, h4, h5, h6 {
     .white-section .portfolio-link:hover, .gray-section .portfolio-link:hover {
       text-decoration: underline; }
 
+#brand-audit-corporate-identity .features-list {
+  position: relative;
+  top: -40px; }
+
 .gray-section {
   background-color: #f0f0f0; }
 
@@ -324,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px; }
 
 .we-inspire-section {
-  background-color: #ffb41b;
+  background-color: #f0f0f0;
   padding: 120px 0; }
   .we-inspire-section .description {
     font-size: 20px;
@@ -356,14 +371,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .horizontal-nav .nav-link {
   box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 40%;
   padding: 0;
   display: block; }
 
 .horizontal-nav li + li {
-  margin-top: 10px; }
+  margin-top: 12px; }
 
 .horizontal-nav .nav-pills .nav-link.active,
 .horizontal-nav .nav-pills .show > .nav-link {
@@ -388,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ab5410; }
 
 .grid-container {
-  min-height: 500px; }
+  min-height: 816px; }
   .grid-container .portfolio-image-grid.tab-1 {
     grid-template-areas: 'item1 item2 item3 item4' 'item5 item6 item7 item8' 'item9 item10 item11 item12'; }
   .grid-container .portfolio-image-grid.tab-2 {
@@ -409,7 +424,11 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 18px; }
     .grid-container .portfolio-image-grid .grid-item {
       text-align: center;
-      overflow: hidden; }
+      overflow: hidden;
+      filter: grayscale(1);
+      transition: all 0.2s; }
+      .grid-container .portfolio-image-grid .grid-item:hover {
+        filter: grayscale(0); }
       .grid-container .portfolio-image-grid .grid-item img {
         width: 100%;
         height: 100%; }
@@ -433,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
       grid-area: item9; }
 
 .testimonials {
-  background: #FFC001; }
+  background: #f0f0f0; }
   .testimonials .testimonials-header {
     font-size: 38px;
     font-weight: 700;
@@ -462,8 +481,81 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   background: #f2f2f2; }
 
+#logos-tabset-links img {
+  cursor: pointer;
+  filter: grayscale(1); }
+  #logos-tabset-links img.active {
+    filter: grayscale(0); }
+
+#cboxLoadedContent {
+  border: none; }
+
+#cboxLoadedContent,
+#cboxWrapper,
+#colorbox, #cboxOverlay, #cboxWrapper {
+  overflow: visible !important; }
+
+#cboxOverlay {
+  opacity: 0.9 !important;
+  filter: alpha(opacity=90) !important; }
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose {
+  background-position-y: center;
+  background-size: 62%;
+  outline: none; }
+
+#cboxPrevious:hover,
+#cboxNext:hover,
+#cboxClose:hover {
+  background-position-y: center; }
+
+#cboxPrevious {
+  left: -30px;
+  background-image: url("../images/svg/Previous.svg"); }
+
+#cboxNext {
+  right: -30px;
+  background-image: url("../images/svg/Next.svg"); }
+
+#cboxCurrent {
+  right: 50px; }
+
+#cboxClose {
+  top: -25px;
+  background-image: url("../images/svg/Close.svg");
+  height: 24px; }
+
+#cboxContent {
+  margin-top: 35px; }
+
 .contact-form-header {
   font-size: 38px; }
+
+.checkboxes-heading {
+  margin: 0 0 15px 0; }
+
+.custom-checkbox {
+  margin: 0 0 15px 0; }
+  .custom-checkbox .custom-control-label {
+    font-weight: 600; }
+    .custom-checkbox .custom-control-label::before {
+      border-radius: 0; }
+
+#enquiryDetails {
+  resize: none; }
+
+.recaptcha-container {
+  align-items: end;
+  display: flex;
+  justify-content: flex-end; }
+  .recaptcha-container .g-recaptcha {
+    display: inline-block;
+    margin: 0 15px 0 0; }
+
+.contact-us address {
+  margin: 90px 0 50px 0; }
 
 .careers input {
   width: 100%; }
@@ -629,18 +721,11 @@ h1, h2, h3, h4, h5, h6 {
   .our-team-section .team-grid .team-member {
     background-color: #d3d3d3;
     cursor: pointer;
-    height: 255px;
-    margin: 22px 22px 0 0;
+    margin: 2% 2% 0 0;
     position: relative;
-    width: 255px; }
+    width: 18%; }
     .our-team-section .team-grid .team-member:hover .overlay-effect {
       opacity: 1; }
-  .our-team-section .team-grid .team-info {
-    background-color: #ffab00;
-    flex: 1;
-    height: 255px;
-    margin: 22px 22px 0 0;
-    padding: 25px 30px; }
   .our-team-section .team-grid .overlay-effect {
     justify-content: flex-end;
     background-color: rgba(171, 84, 16, 0.8);
@@ -650,7 +735,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     left: 0;
     opacity: 0;
-    padding: 25px 30px;
+    padding: 25px 20px;
     position: absolute;
     right: 0;
     top: 0;
@@ -673,6 +758,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     font-weight: 300;
     line-height: 20px; }
+
+.team-info-wrap {
+  background-color: #ffab00;
+  flex: 1;
+  margin: 2% 2% 0 0;
+  padding: 25px 30px;
+  overflow: auto;
+  max-height: 200px; }
+  .team-info-wrap .team-info {
+    position: relative;
+    top: -100%;
+    display: none;
+    transition: all 0.3s ease-in; }
+    .team-info-wrap .team-info.active {
+      top: 0;
+      display: block; }
 
 .blog-container {
   cursor: pointer;
@@ -706,6 +807,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-weight: 300;
   line-height: 20px; }
+  .blog-description strong {
+    font-weight: 700; }
+
+.blockquote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify; }
 
 .blog-author {
   font-size: 16px;
@@ -744,6 +853,8 @@ svg:hover .back-btn-shape {
     .blog-heading .blog-info .blog-title {
       font-size: 62px;
       line-height: 1; }
+    .blog-heading .blog-info .blog-title-sm {
+      font-size: 40px; }
     .blog-heading .blog-info .blog-author {
       font-size: 30px;
       line-height: 1; }
@@ -755,9 +866,16 @@ svg:hover .back-btn-shape {
       width: 100%; }
 
 .blog-description p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   text-align: justify; }
+
+.brand-list li {
+  font-size: 16px;
+  line-height: 24px; }
+
+.brand-list li + li {
+  margin-top: 10px; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -784,12 +902,10 @@ form {
     margin-left: 4px;
     margin-bottom: 0; }
 
-#cboxLoadedContent {
-  padding: 50px; }
-
 #scrollUp {
+  position: fixed;
   background-image: url(/images/top-arrow.png);
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 30px;
   width: 38px;
   height: 38px; }
