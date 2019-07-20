@@ -72,3 +72,21 @@ form {
     }
   }
 }
+
+.success {
+  padding: 0 15px;
+  color: #000000;
+  background-color: rgba(177, 177, 177, 0.4);
+	font-size: 15px;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+}
+
+.error {
+  padding: 0 15px;
+  color: #ffffff;
+  background-color: #d5130b;
+	font-size: 15px;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+}

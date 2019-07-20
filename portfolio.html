@@ -31,7 +31,7 @@
 
 <body>
 
-  <header class="main-header small-header" id="page-header">
+  <header class="main-header small-header sticky" id="page-header">
     <nav class="navbar fixed-top navbar-light">
 
       <div class="container">
@@ -427,7 +427,7 @@
                     <img src="images/tab-4/thumbs/Fleetguard/BB&BM Fleetguard_07.png" alt="">
                   </a>
                 </div>
-                <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
+                <div class="company-info grid-item item-8 text-left p-4">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
                     Established in 1987, Fleetguard Filters Pvt Ltd. is India's Leading Manufacturer of heavy duty Air,
@@ -492,7 +492,7 @@
                     <img src="images/tab-4/thumbs/Constro/BB&BM Constro_07.png" alt="">
                   </a>
                 </div>
-                <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
+                <div class="company-info grid-item item-8 text-left p-4">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
                     Constro is one of India's biggest by-yearly International Trade Fair of Construction Machinery,
@@ -553,7 +553,7 @@
                     <img src="images/tab-4/thumbs/10th-Mile/BB&BM 10thmile_07.png" alt="">
                   </a>
                 </div>
-                <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
+                <div class="company-info grid-item item-8 text-left p-4">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
                     10th Mile is one of the major hospitality group of Pune having three properties namely, a restaurant
@@ -616,7 +616,7 @@
                     <img src="images/tab-4/thumbs/IIID/BB&BM IIID_07.png" alt="">
                   </a>
                 </div>
-                <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
+                <div class="company-info grid-item item-8 text-left p-4">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   Indian Institute of Interior Designers, IIID, is a national association of Interior Designers and
                   Architects aiming to
@@ -677,7 +677,7 @@
                     <img src="images/tab-4/thumbs/Accurate/BB&BM Accurate_07.png" alt="">
                   </a>
                 </div>
-                <div class="grid-item item-8 text-left p-4" style="background: lightgray;">
+                <div class="company-info grid-item item-8 text-left p-4">
                   <!-- <h3 style="color: #010101">Lorem Ipsum Lorem</h3> -->
                   <p>
                     A five decade old group, Accurate is a pioneer in manufacturing of Quality Measuring Instruments in
@@ -1170,26 +1170,26 @@
             <h5>Our Service Packages</h5>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#brand-audit-corporate-identity">Brand Audit & Corporate
+                <a class="nav-link" href="index.html#brand-audit-corporate-identity">Brand Audit & Corporate
                   Identity</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#graphic-designing-production">Graphic Designing &
+                <a class="nav-link" href="index.html#graphic-designing-production">Graphic Designing &
                   Production</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#web-designing-digital-marketing">Web Communication & Digital
+                <a class="nav-link" href="index.html#web-designing-digital-marketing">Web Communication & Digital
                   Marketing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#brand-building-brand-management">Brand Building & Brand
+                <a class="nav-link" href="index.html#brand-building-brand-management">Brand Building & Brand
                   Management</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#exhibitions-events">Exhibitions & Events</a>
+                <a class="nav-link" href="index.html#exhibitions-events">Exhibitions & Events</a>
               </li>
               <!-- <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#space-designing-project-management">Space Designing & Project
+                <a class="nav-link" href="index.html#space-designing-project-management">Space Designing & Project
                   Management</a>
               </li> -->
             </ul>
@@ -1284,7 +1284,7 @@
             host.appendChild(clone);
           }
 
-          $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%' });
+          $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%', maxHeight: '95%', transition: 'fade' });
 
         }
 
@@ -1339,7 +1339,7 @@
           }
 
           // need to activate gallery for that tab
-          $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%' });
+          $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%', maxHeight: '95%', transition: 'fade' });
 
         }
 
@@ -1354,7 +1354,7 @@
       });
 
       // this is to activate the gallery on page load
-      $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%', maxHeight: '100%' });
+      $('a.gallery').colorbox({ opacity: 0.5, rel: $(this).attr('rel'), scrolling: false, maxWidth: '100%', maxHeight: '95%', transition: 'fade' });
 
     });
 
@@ -1362,6 +1362,14 @@
     // initialize carousel in at the bottom , testimonials section
     $('#testimonials-carousel').carousel({
       interval: 5000
+    });
+
+    $(document).bind('cbox_open', function () {
+      $('body').css('overflow','hidden');
+    });
+
+    $(document).bind('cbox_cleanup', function () {
+      $('body').css('overflow', 'initial');
     });
 
 

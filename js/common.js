@@ -98,13 +98,16 @@ $(document).ready(function () {
 
 
 //Add dynamically 'sticky' class to page header
+var isHomePage = $("body").hasClass("home-page");
 
-window.onscroll = function () { 
-  addStickyClass();
-  showScrollTopBtn();
-};
+if (isHomePage) {
+  window.onscroll = function () {
+    addStickyClass();
+    showScrollTopBtn();
+  };
+}
 
-var header = document.getElementById("page-header");
+var header = document.getElementById("page-header-home");
 
 function addStickyClass() {
   if (window.pageYOffset > 100) {
