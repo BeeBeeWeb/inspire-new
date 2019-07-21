@@ -24,8 +24,14 @@
     }
 }
 
+#myTabContent {
+    #brand-building-brand-management {
+        background: #e1e1e1;
+    }
+}
+
 .grid-container {
-    min-height: 816px;
+    // min-height: 816px;
 
     .portfolio-image-grid.tab-1 {
         grid-template-areas:
@@ -50,9 +56,15 @@
 
     .portfolio-image-grid.tab-4 {
         grid-template-areas:
-            'item1 item2 item3 item4'
-            'item5 item5 item6 item4'
-            'item7 item8 item8 item8';
+            'item1 item2'
+            'item3 item4'
+            'item5 item6';
+
+        .grid-item {
+            background: white;
+            filter: grayscale(0)!important;
+            padding: 30px;
+        }
     }
 
     .portfolio-image-grid.tab-5 {
