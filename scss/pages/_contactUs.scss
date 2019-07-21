@@ -25,6 +25,7 @@
   align-items: end;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 
   .g-recaptcha {
     display: inline-block;
@@ -34,5 +35,45 @@
 .contact-us {
   address {
     margin: 90px 0 50px 0;
+  }
+
+  .company-logos {
+    display: flex;
+    margin: 20px 0 0 0;
+    .logo-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 30px 0 0;
+      margin: 0 25px 0 0;
+      width: 40%;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+#contact-us-form {
+  position: relative;
+
+  .form-submit-progress {
+    // background-color: rgba(177, 177, 177, 0.4);
+    bottom: 0;
+    height: 100%;
+    left: 15px;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    transition: all 1s ease;
+    width: 50%;
+    z-index: 10;
+
+    &.fade-in {
+      opacity: 1;
+    }
   }
 }

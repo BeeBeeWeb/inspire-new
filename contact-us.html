@@ -16,6 +16,8 @@
 
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/loading.css">
+  <link rel="stylesheet" type="text/css" href="css/loading-btn.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -32,7 +34,7 @@
 
 <body>
 
-  <header class="main-header small-header" id="page-header">
+  <header class="main-header small-header sticky" id="page-header">
     <nav class="navbar fixed-top navbar-light">
   
       <div class="container">
@@ -129,7 +131,7 @@
             Plot No. 17/1 B, Kothrud, Pune - 411 029 <br>
             Tel.: + 91-20-25465170, 25467955 <br>
             M: + 91 9823033601 <br>
-            <a href="mailto:info@inspiremultimedia.co.in">info@inspiremultimedia.co.in</a>
+            <a href="mailto:info@inspiregroup.in">info@inspiregroup.in</a>
             
           </address>
 
@@ -140,13 +142,27 @@
               Navi Mumbai - 410 218 <br>
               <!-- M: + 91 7757951600 -->
           </address>
+
+          <div class="our-associate-group-companies">
+            <h6 style="color: #ab5410;">Our Associate Group Companies</h6>
+            <div class="company-logos">
+              <div class="logo-container">
+                <img src="images/crosslink.png" alt="Crosslink" class="img-fluid">
+                <span class="">www.crosslinkint.net</span>
+              </div>
+              
+              <div class="logo-container">
+                <img src="images/smmunleashed.png" alt="SMM Unleashed" class="img-fluid">
+                <span class="">www.smmunleashed.co.in</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-8">
           <h1 class="contact-form-header text-center mb-5">Start getting result</h1>
 
-          <form action="" id="contact-us-form" method="post">
-
+          <form action="send.php" id="contact-us-form" method="post">
             <div class="row">
               <div class="col">
                 <div class="form-group">
@@ -242,8 +258,12 @@
 
             <div class="row">
               <div class="col-12 recaptcha-container">
-                <div class="g-recaptcha" data-sitekey="6LfHZKsUAAAAAAFNHc0eYK_z9gGvVoBx0sCI1OHd"></div>
-                <button type="submit" class="form-btn">Submit</button>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfHZKsUAAAAAAFNHc0eYK_z9gGvVoBx0sCI1OHd"></div> -->
+                <button type="submit" class="form-btn submit-btn ld-ext-right">
+                  Submit
+                  <div class="ld ld-ring ld-spin"></div>
+                </button>
+                <div class="form-submit-progress"></div>
               </div>
             </div>
           </form>
@@ -269,25 +289,25 @@
             <h5>Our Service Packages</h5>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#brand-audit-corporate-identity">Brand Audit & Corporate
+                <a class="nav-link" href="index.html#brand-audit-corporate-identity">Brand Audit & Corporate
                   Identity</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#graphic-designing-production">Graphic Designing & Production</a>
+                <a class="nav-link" href="index.html#graphic-designing-production">Graphic Designing & Production</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#web-designing-digital-marketing">Web Communication & Digital
+                <a class="nav-link" href="index.html#web-designing-digital-marketing">Web Communication & Digital
                   Marketing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#brand-building-brand-management">Brand Building & Brand
+                <a class="nav-link" href="index.html#brand-building-brand-management">Brand Building & Brand
                   Management</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#exhibitions-events">Exhibitions & Events</a>
+                <a class="nav-link" href="index.html#exhibitions-events">Exhibitions & Events</a>
               </li>
               <!-- <li class="nav-item">
-                <a class="nav-link" href="portfolio.html#space-designing-project-management">Space Designing & Project
+                <a class="nav-link" href="index.html#space-designing-project-management">Space Designing & Project
                   Management</a>
               </li> -->
             </ul>

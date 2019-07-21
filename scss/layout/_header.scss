@@ -49,8 +49,20 @@
   }
 
   &.small-header {
-    background: #ffb41b url("../images/smallheaderbg.jpg") no-repeat;
+    background-color: #f1bf31;
     background-size: cover;
+    height: 110px;
+    max-height: 110px;
+
+    .navbar {
+      height: 110px;
+    }
+
+    .navbar-brand {
+      img {
+        max-height: 80px;
+      }
+    }
   }
 }
 

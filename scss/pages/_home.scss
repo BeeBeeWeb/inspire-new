@@ -14,13 +14,13 @@ h1, h2, h3, h4, h5, h6 {
 
   &:hover {
     .menu-icon-shape {
-      fill: #000000;
+      fill: #ffffff;
     }
   }
 }
 
 .menu-icon-shape {
-  fill: #ffffff;
+  fill: #000000;
   transition: all 0.3s ease;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     .menu-icon {
       &:hover {
         .menu-icon-shape {
-          fill: #cccccc;
+          fill: #ffffff;
         }
       }
     }
