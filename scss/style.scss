@@ -52,11 +52,11 @@ form {
 #scrollUp {
   position: fixed;
   // background-image: url(/images/top-arrow.png);
-  bottom: 60px;
-  left: 30px;
+  bottom: 85px;
+  left: 20px;
   // width: 38px;
   height: 38px;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(-50%);
   img{
     display: inline-block;
     margin-right: 5px;

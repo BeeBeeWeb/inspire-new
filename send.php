@@ -9,6 +9,59 @@
      $role = $_POST['yourRole'];
      $message = $_POST['enquiryDetails'];
 
+// $emailMessage = <<<EMAILBODY
+// <table>
+//     <tbody>
+//         <tr>
+//             <td>Name</td>
+//             <td>$fname $lname</td>
+//         </tr>
+//         <tr>
+//             <td>Phone</td>
+//             <td>$tel</td>
+//         </tr>
+//         <tr>
+//             <td>Email</td>
+//             <td>$mail</td>
+//         </tr>
+//         <tr>
+//             <td>Company</td>
+//             <td>$cname</td>
+//         </tr>
+//         <tr>
+//             <td>Role</td>
+//             <td>$role</td>
+//         </tr>
+//     </tbody>
+// </table>
+// EMAILBODY;
+
+    // $name = $_GET['servicePackages'];
+
+    // if (isset($_GET['servicePackages'])) {
+    // $emailMessage .= "<br><h5>Interested in following Service Packages: <br></h5>";
+
+    // foreach ($name as $servicePackages){
+    //     echo $servicePackages."<br />";
+    // }
+    // } else {
+    // $emailMessage .= "No Service Packages chosen.";
+    // }
+
+    // $emailMessage .= $message;
+
+     $name = $_GET['servicePackages'];
+
+     if (isset($_GET['servicePackages'])) {
+     echo "Interested in following Service Packages: <br>";
+
+     foreach ($name as $servicePackages){
+          echo $servicePackages."<br />";
+     }
+     } else {
+     echo "You did not choose a color.";
+     }
+
      $mail = new PHPMailer();
      $mail->isSMTP();                                      // Set mailer to use SMTP
      $mail->SMTPDebug = 3;
