@@ -6,11 +6,13 @@
 }
 
 .info-row {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .we-inspire-info {
-  font-size: 20px;
+  //font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 26px;
   margin: 0;
@@ -298,4 +300,38 @@
       display: block;
     }
   }
+}
+.info-row h2{
+  color: #ab5410;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-top: 45px;
+}
+.mission-text{
+  background: #e2e2e2;
+  padding: 17px;
+  p{
+    margin-bottom: 0;
+  }
+}
+.count-wrap{
+  max-width: 388px;
+}
+.count-number{
+  font-size: 40px;
+  line-height: 40px;
+  color: #ab5410;
+  font-weight: 700;
+}
+.count-text{
+  font-size: 17px;
+  line-height: 24px;
+  color: #071201;
+}
+.inspire-office-images img+img{
+  margin-left: 15px;
+}
+.inspire-office-images{
+  margin: 50px 0 55px;
 }
