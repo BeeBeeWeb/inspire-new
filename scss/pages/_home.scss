@@ -79,6 +79,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 45px;
     line-height: 54px;
     pointer-events: none;
+    span{
+      font-weight: normal;
+    }
   }
 
   .about-description {
@@ -93,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .emphasis {
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 @media (max-width: 1535px) {
