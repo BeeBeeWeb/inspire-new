@@ -1166,12 +1166,12 @@
 
       // if hash is not present in url or hash equals to first tab
       // then we need to load the content of that
-      if (!hash || hash === '#brand-audit-corporate-identity') {
+      // if (!hash || hash === '#brand-audit-corporate-identity') {
         let template = document.querySelector(`#brand-audit-corporate-identity-tab-template`);
         let host = document.querySelector(`#brand-audit-corporate-identity-tab-host`);
         let clone = document.importNode(template.content, true);
         host.appendChild(clone);
-      }
+      // }
 
       // this handles the on tab change events and load the 
       // content of that tab from its template
