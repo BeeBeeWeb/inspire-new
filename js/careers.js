@@ -1,7 +1,7 @@
 $(function () {
 
   // Get the form.
-  var form = $('#contact-us-form');
+  var form = $('#careers-form');
 
   // Get the messages div.
   var formMessages = $('.form-submit-progress');
@@ -41,7 +41,7 @@ $(function () {
         }, 4000);
 
         // Clear the form.
-        $('#contact-us-form').trigger("reset");
+        $('#careers-form').trigger("reset");
         $('form input, form button, form textarea').prop("disabled", false);
       })
       .fail(function (data) {
@@ -64,7 +64,7 @@ $(function () {
           $('.submit-btn').html('Submit<div class="ld ld-ring ld-spin"></div>');
           $(formMessages).removeClass('success fade-in');
         }, 4000);
-        $('#contact-us-form').trigger("reset");
+        $('#careers-form').trigger("reset");
         $('form input, form button, form textarea').prop("disabled", false);
       });
 
