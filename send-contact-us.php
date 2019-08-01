@@ -65,7 +65,7 @@ EMAILBODY;
      // $mail->setFrom($_POST['emailId'], $_POST['firstName']);
      $mail->setFrom('inspiregrouppune@gmail.com', 'Inspire Website - Contact Us');
      // Add a recipient
-     $mail->addAddress('chaitanya@inspiregroup.in');               // Name is optional
+     $mail->addAddress('info@inspiregroup.in');               // Name is optional
 
 
      $mail->isHTML(true);                                  // Set email format to HTML
