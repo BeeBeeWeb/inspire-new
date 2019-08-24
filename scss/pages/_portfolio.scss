@@ -282,7 +282,7 @@
 //     margin-top: 35px;
 // }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767px) {
     .portfolio {
         .portfolio-header {
             font-size: 24px;
@@ -297,13 +297,117 @@
         .nav-pills {
             .nav-item {
                 min-width: 30%;
-                padding: 10px 0;
+                padding: 10px 4px;
             }
 
             .nav-link {
-                font-size: 12px;
+                font-size: 10px;
                 padding: 4px 0;
+
+                &.active {
+                    padding: 4px;
+                }
             }
         }
+
+        .grid-container {
+
+            .portfolio-image-grid.tab-1 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item3 item4'
+                    'item5 item6'
+                    'item7 item8'
+                    'item9 item10'
+                    'item11 item12';
+            }
+
+            .portfolio-image-grid.tab-6 {
+                grid-template-areas:
+                    'item1 item1'
+                    'item2 item3'
+                    'item4 item5'
+                    'item4 item7'
+                    'item6 item6'
+                    'item8 item9';
+            }
+
+            .portfolio-image-grid.tab-2 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item3 item3'
+                    'item4 item5'
+                    'item4 item6'
+                    'item7 item8'
+                    'item9 item10';
+            }
+
+            .portfolio-image-grid.tab-3 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item1 item3'
+                    'item4 item6'
+                    'item5 item5'
+                    'item7 item8'
+                    'item9 item9';
+            }
+        }
+
+
+
     }
+
+    .testimonials {
+
+        .testimonials-header {
+            font-size: 24px;
+
+            img {
+                top: 100%;
+                width: 30px;
+            }
+        }
+
+        #testimonials-carousel {
+            font-size: 14px;
+
+            .col,
+            .col-12 {
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+                border-bottom: 1px solid lightgray;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+                padding-top: 8px;
+            }
+
+            .carousel-indicators {
+                left: initial;
+                margin: 0;
+                right: 30px;
+
+                li {
+                    width: 10px;
+                    height: 10px;
+                    background: transparent;
+                    border: 0px solid transparent;
+                    border-radius: 100%;
+                    opacity: 1;
+                    box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
+                }
+
+                li.active {
+                    background: #f1bf31;
+                }
+            }
+        }
+
+    }
+
 }
