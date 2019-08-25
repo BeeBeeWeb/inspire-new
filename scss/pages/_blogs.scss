@@ -5,6 +5,7 @@
 
   a {
     color: #071201;
+    display: block;
   }
 
   &:hover {
@@ -27,6 +28,7 @@
 
 .blogs-list {
   list-style: none;
+  padding: 0;
 }
 
 .blog-title {
@@ -71,4 +73,32 @@
   color: #848484;
   font-size: 12px;
   font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .blog-container{
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .blog-info{
+    padding: 0;
+  }
+  .blog-title{
+    font-size: 27px;
+  }
+  .blog-image{
+    border: 1px solid #ccc;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .blogs-list{
+    padding: 0;
+  }
+  .blog-image{
+    width: 100%;
+  }
+
 }
