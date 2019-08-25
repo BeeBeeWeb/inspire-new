@@ -108,3 +108,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 767px) {
+  footer .main-footer{
+    padding: 35px 0;
+  }
+  .social-with-us{
+    margin-top: 20px;
+  }
+  footer .copyright-container .info{
+    justify-content: center;
+  }
+}
