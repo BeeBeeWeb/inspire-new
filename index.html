@@ -40,7 +40,7 @@
 </head>
 
 <body class="home-page" data-spy="scroll" data-target="#horizontal-nav" data-offset="125">
-  <nav class="position-fixed horizontal-nav" id="horizontal-nav">
+  <nav class="position-fixed horizontal-nav d-none d-md-block" id="horizontal-nav">
     <ul class="nav nav-pills flex-column">
       <li class="nav-item">
         <a class="nav-link active" href="#section1"></a>
@@ -240,16 +240,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="title">Brand Audit &amp;<br />Corporate Identity</h2>
-          <div class="sub-title">Shape Your Brand with a Unique Identity…</div>
-          <div class="slogan">"It is not what the brand stands for, but what customers perceive the brand stands for"
+          <h2 class="title">Brand Audit &amp; <br class="d-none d-md-block" />Corporate Identity</h2>
+          <div class="sub-title d-none d-md-block">Shape Your Brand with a Unique Identity…</div>
+          <div class="slogan d-none d-md-block">"It is not what the brand stands for, but what customers perceive the brand stands for"
           </div>
-          <p class="description">
+          <p class="description d-none d-md-block">
             A brand delivers an experience at each interaction in the marketplace. Brand Audit enables you to understand
             how your market feels about that brand experience. It encompasses your internal market of your stakeholders,
             as well as your external market of your customers and prospects.<br />
           </p>
-          <p class="description">
+          <p class="description d-none d-md-block">
             <strong>With our Brand Audit &amp; Corporate Identity service package, we evaluate, research and recommend
               measures to design or elevate the brand image and ensure sustainable growth along with personalized
               association with brand values in customers’ mind.</strong>
@@ -261,7 +261,20 @@
               class="img-fluid" />
           </figure>
 
-          <a href="portfolio.html" class="portfolio-link">Portfolio</a>
+          <div class="links-wrapper">
+            <a href="portfolio.html" class="portfolio-link">Portfolio</a>
+            <a href="contact-us.html" class="get-results-link d-block d-md-none">Start Getting Results</a>
+          </div>
+          
+          <div class="sub-title d-block d-md-none">Shape Your Brand with a Unique Identity…</div>
+          <div class="slogan d-block d-md-none">"It is not what the brand stands for, but what customers perceive the brand stands
+            for"
+          </div>
+          <p class="description d-block d-md-none">
+            A brand delivers an experience at each interaction in the marketplace. Brand Audit enables you to understand
+            how your market feels about that brand experience. It encompasses your internal market of your stakeholders,
+            as well as your external market of your customers and prospects.<br />
+          </p>
         </div>
       </div>
 
@@ -300,7 +313,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2 d-flex justify-content-end align-items-start">
+        <div class="col-md-2 justify-content-end align-items-start d-none d-md-flex">
           <a href="contact-us.html" class="get-results-link">
             <span class="link-text">Start Getting Results</span>
             <span class="arrow-icon">
@@ -316,18 +329,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 order-2">
-          <h2 class="title">Graphic Designing<br />&amp; Production</h2>
-          <div class="sub-title">Enhance your brand image with effective design communication</div>
-          <div class="slogan">"An image is not simply a trademark, a design, a slogan or an easily remembered picture.
+          <h2 class="title">Graphic Designing<br class="d-none d-md-block" />&amp; Production</h2>
+          <div class="sub-title d-none d-md-block">Enhance your brand image with effective design communication</div>
+          <div class="slogan d-none d-md-block">"An image is not simply a trademark, a design, a slogan or an easily remembered picture.
             It is a studiously crafted
             personality profile of a brand"</div>
-          <p class="description">
+          <p class="description d-none d-md-block">
             As people often say, "A picture is worth thousand words" … In today’s competitive markets, you require
             effective brand communication which conveys much more in less space, in less time and in fewer words…
             Effective brand communication reciprocates long-lasting and resonating brand image in customers' mind.
             <br />
           </p>
-          <p class="description">
+          <p class="description d-none d-md-block">
             <strong>We offer our design expertise to make all your Brand Communication more expressive, be it Corporate
               Communication, Sales Promotion Campaign, Marketing Presentation or Brand Building Campaign.</strong>
           </p>
@@ -336,7 +349,23 @@
           <figure>
             <img src="images/Graphic-design-Production.jpg" alt="Graphic Designing & Production" class="img-fluid" />
           </figure>
-          <a href="portfolio.html#graphic-designing-production" class="portfolio-link">Portfolio</a>
+
+          <div class="links-wrapper">
+            <a href="portfolio.html#graphic-designing-production" class="portfolio-link">Portfolio</a>
+            <a href="contact-us.html" class="get-results-link d-block d-md-none">Start Getting Results</a>
+          </div>
+
+          <div class="sub-title d-block d-md-none">Enhance your brand image with effective design communication</div>
+          <div class="slogan d-block d-md-none">"An image is not simply a trademark, a design, a slogan or an easily remembered
+            picture.
+            It is a studiously crafted
+            personality profile of a brand"</div>
+          <p class="description d-block d-md-none">
+            As people often say, "A picture is worth thousand words" … In today’s competitive markets, you require
+            effective brand communication which conveys much more in less space, in less time and in fewer words…
+            Effective brand communication reciprocates long-lasting and resonating brand image in customers' mind.
+            <br />
+          </p>
         </div>
       </div>
 
@@ -388,7 +417,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2 d-flex justify-content-start align-items-start order-1">
+        <div class="col-md-2 justify-content-start align-items-start order-1 d-none d-md-flex">
           <a href="contact-us.html" class="get-results-link">
             <span class="link-text">Start Getting Results</span>
             <span class="arrow-icon">
@@ -888,7 +917,7 @@
     </div>
   </footer>
 
-  <div id="scrollUp" style="display: none;">
+  <div id="scrollUp" style="display: none;" class="d-none d-md-block">
     <a href="#section1">
       <img src="images/back-to-top.png" alt="">
       <span>To the Top</span>

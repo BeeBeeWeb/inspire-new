@@ -323,3 +323,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //  Ends Scroll Spy code
+
+// Medium devices (tablets, small laptops less than 62em)
+@media (max-width: 61.9em) {
+  .white-section, .gray-section {
+    padding: 60px 0;
+  }
+  #brand-audit-corporate-identity .features-list {
+    top: initial;
+  }
+}
+
+// Small devices (phones, tablets less than 48em)
+@media (max-width: 47.9em) {
+  .white-section, .gray-section {
+    padding: 25px 0;
+
+    .order-1 {
+      order: 2;
+    }
+
+    .order-2 {
+      order: 1;
+    }
+
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .links-wrapper {
+      align-items: center;
+      align-self: flex-start;
+      display: flex;
+      margin: 0 0 15px 0;
+
+      .portfolio-link {
+        border-right: 1px solid #828282;
+        color: #828282;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0 10px 0 0;
+        padding: 0 10px 0 0;
+      }
+    }
+
+    .sub-title {
+      align-self: flex-start;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      margin: 0 0 15px 0;
+    }
+
+    .description {
+      color: #666666;
+      font-size: 16px;
+    }
+
+    .features-list {
+      flex-direction: row;
+
+      &.columns3, &.columns4 {
+        .list-group-item {
+          flex-basis: 50%;
+
+          .text {
+            font-size: 13px;
+            word-break: break-word;
+          }
+        }
+      }
+    }
+  }
+
+  #brand-audit-corporate-identity .features-list {
+    top: initial;
+  }
+}
