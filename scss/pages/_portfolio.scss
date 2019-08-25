@@ -282,6 +282,18 @@
 //     margin-top: 35px;
 // }
 
+#brand-building-brand-management {
+    h2 {
+        font-size: 26px;
+        color: #101010;
+        font-weight: normal;
+    }
+
+    p {
+        color: #848484;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .portfolio {
         .nav-pills {
@@ -295,9 +307,43 @@
             }
         }
     }
+
+    .grid-container {
+        .portfolio-image-grid.tab-4 {
+            .grid-item {
+                padding: 20px;
+            }
+        }
+    }
+
+    #brand-building-brand-management {
+        h2 {
+            font-size: 16px;
+            color: #101010;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+    }
 }
 
 @media (max-width: 767px) {
+    #brand-building-brand-management {
+        h2 {
+            font-size: 14px;
+            color: #101010;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+    }
+
     .portfolio {
         .portfolio-header {
             font-size: 24px;
@@ -327,7 +373,14 @@
 
         .grid-container {
 
-            .portfolio-image-grid.tab-1 {
+            .portfolio-image-grid.tab-4 {
+                .grid-item {
+                    padding: 20px;
+                }
+            }
+
+            .portfolio-image-grid.tab-1,
+            .portfolio-image-grid.tab-5 {
                 grid-template-areas:
                     'item1 item2'
                     'item3 item4'
