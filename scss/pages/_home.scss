@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Small devices (phones, tablets less than 48em)
 @media (max-width: 47.9em) {
-  .white-section, .gray-section {
+  .white-section, .gray-section, .design-approach-section {
     padding: 25px 0;
 
     .order-1 {
@@ -350,6 +350,7 @@ h1, h2, h3, h4, h5, h6 {
     .title {
       font-size: 18px;
       line-height: 22px;
+      text-align: left!important;
     }
 
     .links-wrapper {
@@ -375,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: 600;
       line-height: 20px;
       margin: 0 0 15px 0;
+      text-align: left!important;
     }
 
     .description {
@@ -400,5 +402,28 @@ h1, h2, h3, h4, h5, h6 {
 
   #brand-audit-corporate-identity .features-list {
     top: initial;
+  }
+
+  .design-approach-section {
+    .sub-title {
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .da-icon {
+      height: 75px;
+      padding: 20px;
+      width: 75px;
+    }
+
+    .da-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .da-description {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
 }
