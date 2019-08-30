@@ -336,6 +336,47 @@ h1, h2, h3, h4, h5, h6 {
 
 // Small devices (phones, tablets less than 48em)
 @media (max-width: 47.9em) {
+
+  .main-header {
+    height: 170px;
+
+    .navbar {
+      height: 100px;
+      padding: 10px 0 0;
+    }
+
+    .navbar-brand {
+      img {
+        max-height: 80px;
+      }
+    }
+  }
+
+  .home-banner {
+    background-position-x: 70%;
+    background-position-y: 50%;
+    background-size: 280%;
+    min-height: 80vh;
+    max-height: 80vh;
+
+    h1 {
+      font-size: 25px;
+      line-height: 34px;
+      margin: 0;
+      position: absolute;
+      bottom: 50px;
+    }
+  }
+
+  .banner-menu-container {
+    height: calc(80vh - 170px);
+
+    .row {
+      flex: 1;
+      position: relative;
+    }
+  }
+  
   .white-section, .gray-section, .design-approach-section {
     padding: 25px 0;
 
