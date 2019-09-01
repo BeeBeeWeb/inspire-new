@@ -318,7 +318,7 @@
 
     .tab-pane#brand-building-brand-management {
         h2 {
-            font-size: 16px;
+            font-size: 18px;
             color: #101010;
             font-weight: bold;
         }
@@ -333,25 +333,27 @@
 @media (max-width: 767px) {
     .tab-pane#brand-building-brand-management {
         h2 {
-            font-size: 14px;
+            font-size: 18px;
             color: #101010;
             font-weight: bold;
         }
 
-        p {
-            font-size: 12px;
-        }
+        // p {
+        //     font-size: 12px;
+        // }
 
     }
+
     #cboxPrevious {
         left: 0;
         background-color: #848484;
     }
-    
+
     #cboxNext {
         right: 0;
         background-color: #848484;
     }
+
     // #colorbox{
     //     padding: 0 30px;
     //     box-sizing: border-box;
@@ -388,7 +390,7 @@
 
             .portfolio-image-grid.tab-4 {
                 .grid-item {
-                    padding: 20px;
+                    padding: 25px;
                 }
             }
 
