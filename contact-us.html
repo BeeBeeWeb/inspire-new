@@ -121,7 +121,9 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link secondary-link" href="contact-us.html">Contact</a>
+              
+<a class="nav-link secondary-link d-none d-lg-block" href="contact-us.html">Contact</a>
+<a class="nav-link secondary-link d-block d-lg-none" href="contact-us.html">Start Getting Results</a>
             </li>
 
             <li class="nav-item">
@@ -164,18 +166,18 @@
             </div>
           </div>
 
-          <address>
-            <h6 style="color: #ab5410;">PUNE</h6>
+          <address class="contact-address">
+            <h6>PUNE</h6>
             4-C, Devgiri, Kothrud Industrial Estate,<br>
             Plot No. 17/1 B, Kothrud, Pune - 411 029 <br>
             Tel.: + 91-20-25465170, 25467955 <br>
-            M: + 91 9823033601 <br>
+            M: + 91 9823033601 <br/>
             <a href="mailto:info@inspiregroup.in">info@inspiregroup.in</a>
 
           </address>
 
-          <address>
-            <h6 style="color: #ab5410;">MUMBAI</h6>
+          <address class="contact-address">
+            <h6>MUMBAI</h6>
             705, Ma Laxmi Heights, <br>
             Sector 20, Roadpali, Kalamboli, <br>
             Navi Mumbai - 410 218 <br>
@@ -186,7 +188,7 @@
         <div class="col-12 col-sm-8">
           <h1 class="contact-form-header text-center mb-5">Start getting result</h1>
 
-          <form action="send-contact-us.php" id="contact-us-form" method="post" name="contact-us-form">
+          <form action="send-contact-us.php" id="contact-us-form" method="post" name="contact-us-form" class="contact-us-form">
             <div class="row">
               <div class="col">
                 <div class="form-group">
@@ -324,8 +326,8 @@
             </div>
           </div>
 
-          <address>
-            <h6 style="color: #ab5410;">PUNE</h6>
+          <address class="contact-address d-none d-sm-block"> 
+            <h6>PUNE</h6>
             4-C, Devgiri, Kothrud Industrial Estate,<br>
             Plot No. 17/1 B, Kothrud, Pune - 411 029 <br>
             Tel.: + 91-20-25465170, 25467955 <br>
@@ -334,8 +336,8 @@
 
           </address>
 
-          <address>
-            <h6 style="color: #ab5410;">MUMBAI</h6>
+          <address class="contact-address d-none d-sm-block"> 
+            <h6>MUMBAI</h6>
             705, Ma Laxmi Heights, <br>
             Sector 20, Roadpali, Kalamboli, <br>
             Navi Mumbai - 410 218 <br>
@@ -350,16 +352,39 @@
     <div class="main-footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 contact-info">
+          <div class="col-12 col-md-8 col-lg-3 contact-info">
             <img src="images/Inspire-Logo-2.png" alt="Inspire Multimedia" class="inspire-logo img-fluid">
-            <address>
+            
+            <address class="d-none d-lg-block">
               Regd. Off.: 4C, Devgiri, Kothrud<br />
-              Industrial Estate, Pune 411 038
+              Industrial Estate, Pune 411 038 <br/>
+
+              <a class="nav-link" href="tel:+912025465170">+91 20 2546 5170</a>
+              <a class="nav-link" href="mailto:info@inspiregroup.in">info@inspiregroup.in</a>
             </address>
-            <a class="nav-link" href="tel:+912025465170">+91 20 2546 5170</a>
-            <a class="nav-link" href="mailto:info@inspiregroup.in">info@inspiregroup.in</a>
+
+          <address class="contact-address d-block d-lg-none">
+                      <h6>PUNE</h6>
+                      Regd. Off.: 4-C, Devgiri, Kothrud Industrial Estate,<br>
+                      Plot No. 17/1 B, Kothrud, Pune - 411 029 <br>
+
+                      Tel.: <a class="nav-link" href="tel:+912025465170">+91 20 2546 5170</a>,
+                          <a class="nav-link" href="tel:+912025467955">+91 20 2546 7955</a>
+                        <br/>
+                      M: <a class="nav-link" href="tel:+ 91 9823033601">+ 91 9823033601</a><br>
+                      <a href="mailto:info@inspiregroup.in">info@inspiregroup.in</a>
+          </address>
+
+
+          <address class="contact-address d-block d-lg-none">
+            <h6>MUMBAI</h6>
+            705, Ma Laxmi Heights, <br>
+            Sector 20, Roadpali, Kalamboli, <br>
+            Navi Mumbai - 410 218 <br>
+          </address>
+          
           </div>
-          <div class="col-12 mt-4 col-md-6 mt-md-0 col-lg-4 offset-lg-1 nav1">
+          <div class="d-none d-lg-block col-md-6  col-lg-4 offset-lg-1 nav1">
             <h5>Our Service Packages</h5>
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -386,7 +411,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 mt-4 col-md-6 mt-md-0 col-lg-2 nav2">
+          <div class="d-none d-lg-block col-md-6  col-lg-2 nav2">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
               <li class="nav-item"><a class="nav-link" href="index.html#we-inspire">We ‘Inspire’</a></li>

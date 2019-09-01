@@ -108,7 +108,14 @@ footer {
     }
   }
 }
-
+@media (max-width: 991px) {
+  footer .nav-link{
+    display: inline;
+  }
+  .main-footer .contact-address h6{
+    margin-bottom: 2px;
+  }
+}
 @media (max-width: 767px) {
   footer .main-footer{
     padding: 35px 0;

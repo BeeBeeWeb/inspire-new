@@ -18,7 +18,11 @@
     }
   }
 }
-
+.contact-address{
+  h6{
+    color: #ab5410;
+  }
+}
 #enquiryDetails {
   resize: none;
 }
@@ -73,7 +77,6 @@
     }
   }
 }
-
 #contact-us-form {
   position: relative;
 
@@ -99,5 +102,10 @@
 form {
   label {
     font-weight: 300;
+  }
+}
+@media (max-width: 991px) {
+  .contact-us-form{
+    padding: 20px;
   }
 }
