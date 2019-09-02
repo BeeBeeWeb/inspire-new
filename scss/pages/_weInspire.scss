@@ -10,8 +10,8 @@
 }
 
 .info-row {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  // margin-top: 30px;
+  // margin-bottom: 30px;
 }
 
 .we-inspire-info {
@@ -345,17 +345,223 @@
 }
 
 .inspire-office-images img+img {
-  margin-left: 18px;
+  // margin-left: 18px;
 }
 
 .inspire-office-images {
   margin: 50px 0 55px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  img {
+    width: 100%;
+    height: 229px;
+  }
+
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inspire-office-images {
+    display: grid !important;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-bottom: 20px;
+    ;
+
+    img {
+      width: 100%;
+      // height: 100%;
+      margin: 0 !important;
+      height: 200px;
+      ;
+
+      &:nth-child(2) {
+        grid-column: span 2;
+      }
+    }
+
+  }
+
+  .count-wrap {
+    margin: 0;
+  }
+
+  .count-number {
+    font-size: 24px;
+  }
+
+  .count-text {
+    font-size: 12px;
+  }
+
+  .our-team-section {
+    margin-top: -20px;
+
+    h2 {
+      // font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .team-grid {
+      justify-content: center;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+      .team-info-wrap {
+        grid-column: span 2;
+        margin: 0;
+        max-height: 216px;
+        // max-width: auto;
+      }
+
+      .team-member {
+        width: 100%;
+        background-color: white;
+        margin: 0;
+      }
+
+      .overlay-effect {
+        opacity: 1;
+        background: white;
+        position: initial;
+        color: black;
+        padding: 8px;
+
+        .member-name {
+          font-size: 16px;
+        }
+
+        .member-designation {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
 
 @media (max-width: 767px) {
   .page-title {
-    font-size: 18px;
+    font-size: 24px;
   }
+
+  .group-companies {
+    img {
+      width: 80%;
+    }
+  }
+
+  .we-inspire-info {
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: justify;
+  }
+
+  .count-wrap {
+    margin: 20px 0;
+  }
+
+  .count-number {
+    font-size: 24px;
+  }
+
+  .count-text {
+    font-size: 12px;
+  }
+
+  .our-mission-header {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .mission-text {
+    margin-bottom: 40px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .inspire-office-images img+img {
+    margin: 0;
+  }
+
+  .inspire-office-images {
+    flex-wrap: wrap;
+    margin: 0 !important;
+    grid-template-columns: 1fr;
+
+    img {
+      width: 100%;
+      margin: auto !important;
+      margin-bottom: 10px !important;
+    }
+  }
+
+  .infrastructure-points-list {
+    width: 100%;
+
+    .list-item {
+      width: 48%;
+    }
+  }
+
+  .points-container {
+    margin-bottom: 40px;
+
+    .center-logo {
+      background-size: 128px;
+      height: 130px;
+      width: 130px;
+    }
+  }
+
+  .we-inspire-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .team-inspire-container {
+    transform: translateX(-50%) scale(0.7);
+    left: 50%;
+    top: -50px;
+  }
+
+  .our-team-section {
+    padding-top: 0 !important;
+  }
+
+  .our-team-section {
+    margin-top: -80px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .team-grid {
+      .team-member {
+        width: 48%;
+        background-color: white;
+      }
+
+      .overlay-effect {
+        opacity: 1;
+        background: white;
+        position: initial;
+        color: black;
+        padding: 8px;
+
+        .member-name {
+          font-size: 16px;
+        }
+
+        .member-designation {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
 }
