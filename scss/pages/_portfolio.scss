@@ -1,0 +1,496 @@
+.portfolio {
+    .portfolio-header {
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .nav-pills {
+
+        .nav-link {
+            border: 1px solid transparent;
+            border-radius: 50px;
+            color: #010101;
+            font-size: 16px;
+            height: 100%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-link.active {
+            color: #ab5410;
+            background: transparent;
+            border: 1px solid #ab5410;
+        }
+    }
+}
+
+#myTabContent {
+    #brand-building-brand-management {
+        background: #e1e1e1;
+    }
+}
+
+.grid-container {
+    // min-height: 816px;
+
+    .portfolio-image-grid.tab-1 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item5 item6 item7 item8'
+            'item9 item10 item11 item12';
+    }
+
+    .portfolio-image-grid.tab-2 {
+        grid-template-areas:
+            'item1 item2 item3 item3'
+            'item4 item5 item6 item7'
+            'item4 item8 item9 item10';
+    }
+
+    .portfolio-image-grid.tab-3 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item1 item5 item5 item6'
+            'item7 item8 item9 item9';
+    }
+
+    .portfolio-image-grid.tab-4 {
+        grid-template-areas:
+            'item1 item2'
+            'item3 item4'
+            'item5 item6';
+
+        .grid-item {
+            background: white;
+            filter: grayscale(0) !important;
+            padding: 45px;
+        }
+    }
+
+    .portfolio-image-grid.tab-5 {
+        grid-template-areas:
+            'item1 item2 item3 item4'
+            'item5 item6 item7 item8'
+            'item9 item10 item11 item12';
+    }
+
+    .portfolio-image-grid.tab-6 {
+        grid-template-areas:
+            'item1 item1 item2 item3'
+            'item4 item5 item6 item6'
+            'item4 item7 item8 item9';
+    }
+
+    .portfolio-image-grid {
+        display: grid;
+        grid-gap: 5px;
+
+        p {
+            color: #010101;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0;
+        }
+
+        .grid-item {
+            text-align: center;
+            overflow: hidden;
+            filter: grayscale(1);
+            transition: all 0.2s;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+
+            &.company-info {
+                background-color: #f1bf31;
+                filter: grayscale(0);
+            }
+        }
+
+        .item-1 {
+            grid-area: item1;
+        }
+
+        .item-2 {
+            grid-area: item2;
+        }
+
+        .item-3 {
+            grid-area: item3;
+        }
+
+        .item-4 {
+            grid-area: item4;
+        }
+
+        .item-5 {
+            grid-area: item5;
+        }
+
+        .item-6 {
+            grid-area: item6;
+        }
+
+        .item-7 {
+            grid-area: item7;
+        }
+
+        .item-8 {
+            grid-area: item8;
+        }
+
+        .item-9 {
+            grid-area: item9;
+        }
+    }
+}
+
+.testimonials {
+    // background: #FFC001;
+    background: #f0f0f0;
+
+    .testimonials-header {
+        font-size: 38px;
+        font-weight: 700;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.2;
+        }
+    }
+
+    #testimonials-carousel {
+        font-size: 14px;
+
+        img {
+            width: 100%;
+            padding-top: 8px;
+        }
+
+        .carousel-indicators {
+            left: initial;
+            margin: 0;
+            right: 30px;
+
+            li {
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border: 0px solid transparent;
+                border-radius: 100%;
+                opacity: 1;
+                box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
+            }
+
+            li.active {
+                background: #f1bf31;
+            }
+        }
+    }
+
+}
+
+.tab-1 {
+    .cboxElement {
+        padding: 25px;
+        display: block;
+        background: #f2f2f2;
+    }
+}
+
+#logos-tabset-links {
+    img {
+        cursor: pointer;
+        filter: grayscale(1);
+
+        &.active {
+            filter: grayscale(0);
+        }
+    }
+}
+
+#cboxLoadedContent {
+    border: none;
+}
+
+#cboxLoadedContent,
+#cboxWrapper,
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
+    overflow: visible !important;
+}
+
+#cboxOverlay {
+    opacity: 0.9 !important;
+    filter: alpha(opacity=90) !important;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose {
+    background-position-y: center;
+    background-size: 62%;
+    outline: none;
+}
+
+#cboxPrevious:hover,
+#cboxNext:hover,
+#cboxClose:hover {
+    background-position-y: center;
+}
+
+#cboxPrevious {
+    left: -30px;
+    background-image: url("../images/svg/Previous.svg");
+}
+
+#cboxNext {
+    right: -30px;
+    background-image: url("../images/svg/Next.svg");
+}
+
+#cboxCurrent {
+    right: 50px;
+    display: none !important;
+}
+
+#cboxClose {
+    top: 0;
+    background-image: url("../images/svg/Close.svg");
+    height: 38px;
+    right: 0;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+// #cboxContent{
+//     margin-top: 35px;
+// }
+
+.tab-pane#brand-building-brand-management {
+    h2 {
+        font-size: 26px;
+        color: #101010;
+        font-weight: normal;
+    }
+
+    p {
+        color: #848484;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .portfolio {
+        .nav-pills {
+            .nav-item {
+                min-width: 30%;
+                padding: 10px 4px;
+            }
+
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .grid-container {
+        .portfolio-image-grid.tab-4 {
+            .grid-item {
+                padding: 20px;
+            }
+        }
+    }
+
+    .tab-pane#brand-building-brand-management {
+        h2 {
+            font-size: 18px;
+            color: #101010;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .tab-pane#brand-building-brand-management {
+        h2 {
+            font-size: 18px;
+            color: #101010;
+            font-weight: bold;
+        }
+
+        // p {
+        //     font-size: 12px;
+        // }
+
+    }
+
+    #cboxPrevious {
+        left: 0;
+        background-color: #848484;
+    }
+
+    #cboxNext {
+        right: 0;
+        background-color: #848484;
+    }
+
+    // #colorbox{
+    //     padding: 0 30px;
+    //     box-sizing: border-box;
+    // }
+
+    .portfolio {
+        .portfolio-header {
+            font-size: 24px;
+        }
+
+        .tab-1 {
+            .cboxElement {
+                // padding: 0px;
+            }
+        }
+
+        .nav-pills {
+            .nav-item {
+                min-width: 32%;
+                padding: 10px 0;
+            }
+
+            .nav-link {
+                font-size: 10px;
+                padding: 4px;
+
+                &.active {
+                    padding: 4px;
+                }
+            }
+        }
+
+        .grid-container {
+
+            .portfolio-image-grid.tab-4 {
+                .grid-item {
+                    padding: 25px;
+                }
+            }
+
+            .portfolio-image-grid.tab-1,
+            .portfolio-image-grid.tab-5 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item3 item4'
+                    'item5 item6'
+                    'item7 item8'
+                    'item9 item10'
+                    'item11 item12';
+            }
+
+            .portfolio-image-grid.tab-6 {
+                grid-template-areas:
+                    'item1 item1'
+                    'item2 item3'
+                    'item4 item5'
+                    'item4 item7'
+                    'item6 item6'
+                    'item8 item9';
+            }
+
+            .portfolio-image-grid.tab-2 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item3 item3'
+                    'item4 item5'
+                    'item4 item6'
+                    'item7 item8'
+                    'item9 item10';
+            }
+
+            .portfolio-image-grid.tab-3 {
+                grid-template-areas:
+                    'item1 item2'
+                    'item1 item3'
+                    'item4 item6'
+                    'item5 item5'
+                    'item7 item8'
+                    'item9 item9';
+            }
+        }
+
+
+
+    }
+
+    .testimonials {
+
+        .testimonials-header {
+            font-size: 24px;
+
+            img {
+                top: 100%;
+                width: 30px;
+            }
+        }
+
+        #testimonials-carousel {
+            font-size: 14px;
+
+            .col,
+            .col-12 {
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+                border-bottom: 1px solid lightgray;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+                padding-top: 8px;
+            }
+
+            .carousel-indicators {
+                left: initial;
+                margin: 0;
+                right: 30px;
+
+                li {
+                    width: 10px;
+                    height: 10px;
+                    background: transparent;
+                    border: 0px solid transparent;
+                    border-radius: 100%;
+                    opacity: 1;
+                    box-shadow: 0 0 0px 1px #000, 0 0 1px 2px #888;
+                }
+
+                li.active {
+                    background: #f1bf31;
+                }
+            }
+        }
+
+    }
+
+}

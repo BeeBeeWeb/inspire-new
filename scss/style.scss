@@ -1,5 +1,92 @@
+/* Abstracts - variables, functions, mixins, placeholders, etc */
+@import 'abstracts/mixins';
+
 /* layout - navigation, grid, header, footer, sidebar, forms, etc */
 @import 'layout/header';
+@import 'layout/footer';
 //@import 'layout/footer';
 
 @import 'pages/home';
+@import 'pages/portfolio';
+@import 'pages/contactUs';
+@import 'pages/careers';
+@import 'pages/weInspire';
+@import 'pages/blogs';
+@import 'pages/blogDetail';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-btn {
+  background: #ab5410;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  padding: 4px 30px;
+}
+
+form {
+  font-size: 16px;
+  padding: 40px;
+  box-shadow: 5px 5px 15px 4px lightgrey;
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  label {
+    margin-left: 4px;
+  }
+
+  label.error {
+    color: tomato;
+    font-size: 12px;
+    margin-left: 4px;
+    margin-bottom: 0;
+  }
+}
+
+
+#scrollUp {
+  position: fixed;
+  // background-image: url(/images/top-arrow.png);
+  bottom: 85px;
+  left: 20px;
+  // width: 38px;
+  height: 38px;
+  transform: rotate(-90deg) translateY(-50%);
+  img{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -6px;
+  }
+ a{
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    margin-left: 5px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.success {
+  padding: 0 15px;
+  color: #000000;
+  background-color: rgba(177, 177, 177, 0.8);
+	font-size: 15px;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+}
+
+.error {
+  padding: 0 15px;
+  color: #ffffff;
+  background-color: #d5130b;
+	font-size: 15px;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+}

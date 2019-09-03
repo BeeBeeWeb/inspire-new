@@ -1,29 +1,120 @@
 .main-nav{
-  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
   background: #fff; 
-  right: 0;
+  right: -17px;
   top: 0;
-  padding: 35px 50px;
+  //padding: 50px 130px;
+  padding: 50px 70px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  //@include transition(height 1S linear);
 }
 .main-header{
+  display: flex;
+  // height: 268px;
+  height: 225px;
   position: relative;
-  z-index: 2;
+  z-index: 30;
+
+  .navbar {
+    flex: 1;
+    // height: 268px;
+    height: 190px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-brand {
+    img {
+      max-height: 115px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &.sticky {
+    .navbar {
+      // background-color: #ffffff;
+      background-color: #f1bf31;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+      // height: 124px;
+      height: 110px;
+    }
+
+    .navbar-brand {
+      img {
+        max-height: 80px;
+      }
+    }
+  }
+
+  &.small-header {
+    background-color: #f1bf31;
+    background-size: cover;
+    height: 110px;
+    max-height: 110px;
+
+    .navbar {
+      height: 110px;
+    }
+
+    .navbar-brand {
+      img {
+        max-height: 80px;
+      }
+    }
+  }
+}
+
+.banner-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 268px);
+}
+
+
+.navbar-light{
+  .navbar-nav {
+    .active{
+      .nav-link {
+        color: #ab5410;
+      }
+    }
+    .nav-link{
+      &:hover, &:focus{
+        color: #ab5410;
+      }
+    }
+    .primary-link{
+      color: #404040;
+    }
+    .secondary-link{
+      color: #848484;
+    }
+  }
 }
 .navbar-nav {
-  .primary-link{
+  .nav-link{
     font-size: 20px;
     line-height: 22px;
+    font-weight: 700;
   }
 }
 .sticky-nav {
-  margin-top:40px;
+  margin: auto 0 40px 0;
   position: relative;
   li{
     flex-basis:16.666%;
     &:first-child {
       a{
         padding-left: 0;
-
+        margin-left:0;
+      }
+    }
+    &.active{
+      a{
+        border-bottom: 4px solid #ab5410;
       }
     }
   } 
@@ -33,10 +124,28 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    padding: 0 0 10px;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
     transition: all 0.2s Ease-in-out;
     &:hover{
-      margin-top: 14px;
+      /* margin-top: 14px;*/
+      border-bottom-color: #ab5410;
+      transform: scale(1.1);
     }
   }
 
+}
+
+.close-btn {
+  background-color: #eeeeee;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+}
+
+@media (max-width: 767px) {
+  .home-banner h1{
+    margin-top: 300px;
+  }
 }
